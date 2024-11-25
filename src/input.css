@@ -103,11 +103,11 @@
   /* ---------------------------------------------header */
 
   .inquiry-btn {
-    @apply bg-blue px-8 py-2 rounded-md font-bold text-[24px] text-white cursor-pointer;
+    @apply bg-blue px-8 py-2 rounded-md font-bold text-[18px] text-white cursor-pointer;
     @apply hover:opacity-70 transition-opacity duration-700;
   }
   .reservation-btn {
-    @apply bg-green text-white rounded-md text-[18px] font-bold px-12 py-4 relative;
+    @apply bg-green inline-block text-white rounded-md text-[18px] font-bold px-12 py-4 relative;
     @apply before:w-4/5 before:h-4/5 before:border before:border-white before:absolute before:rounded-md before:left-1/2 before:top-1/2 before:-translate-x-1/2 before:-translate-y-1/2;
     @apply hover:opacity-70 transition-opacity duration-700;
   }
