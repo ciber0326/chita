@@ -131,7 +131,7 @@
   /* -- -- card */
   .card-item {
     @apply flex justify-between px-[15px] py-[15px] rounded-[30px] w-full;
-    @apply xm:w-[420px] xm:px-[30px] xm:py-[30px];
+    @apply xm:w-[420px] xm:px-[30px] xm:py-[20px];
   }
 
   .card-item img[alt='card-icon'] {
@@ -172,7 +172,7 @@
   }
   .sec-04-lists li h5.title {
     @apply bg-blue text-white rounded-lg text-[22px] font-bold text-center;
-    @apply py-4 mb-8;
+    @apply py-2 mb-8;
   }
   .sec-04-lists li h5.title span {
     @apply text-yellow text-[0.8em];

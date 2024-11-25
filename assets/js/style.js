@@ -24,9 +24,10 @@ $(document).ready(function () {
     }
   })
   var topSec01Slider = new Swiper('#topSec03Slider', {
-    slidesPerView: 2, // Show 4 slides
-    spaceBetween: 40, // Space between slides in pixels
+    slidesPerView: 2.5, // Show 4 slides
+    spaceBetween: 20, // Space between slides in pixels
     loop: true, // Enable looping
+    
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
