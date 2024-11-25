@@ -920,7 +920,7 @@ body {
   font-size: 22px;
   font-weight: 900;
   --tw-text-opacity: 1;
-  color: rgb(255 4 4 / var(--tw-text-opacity));
+  color: rgb(151 0 9 / var(--tw-text-opacity));
   background-image: linear-gradient(
       to left bottom,
       #fffcea 0,
@@ -1232,11 +1232,11 @@ footer nav {
   position: relative;
   cursor: pointer;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 4 4 / var(--tw-bg-opacity));
+  background-color: rgb(151 0 9 / var(--tw-bg-opacity));
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 2;
   --tw-text-opacity: 1;
@@ -1290,7 +1290,7 @@ footer nav {
   --tw-bg-opacity: 1;
   background-color: rgb(253 241 80 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
-  color: rgb(255 4 4 / var(--tw-text-opacity));
+  color: rgb(151 0 9 / var(--tw-text-opacity));
   text-decoration: underline;
 }
 
@@ -1702,7 +1702,7 @@ table.map-table tr th:first-child,
   position: relative;
   margin-bottom: 2rem;
   padding-inline-start: 1rem;
-  font-size: 30px;
+  font-size: 20px;
   font-weight: 700;
 }
 
@@ -1804,7 +1804,7 @@ table.map-table tr th:first-child,
   justify-content: center;
   border-radius: 50%;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 4 4 / var(--tw-bg-opacity));
+  background-color: rgb(151 0 9 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -1858,6 +1858,7 @@ table.map-table tr th:first-child,
   padding-bottom: 0.375rem;
   padding-left: 1rem;
   padding-right: 1rem;
+  font-size: 14px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -2067,6 +2068,10 @@ table.map-table tr th:first-child,
   top: 50%;
 }
 
+.right-3 {
+  right: 0.75rem;
+}
+
 .z-\[-1\] {
   z-index: -1;
 }
@@ -2093,6 +2098,11 @@ table.map-table tr th:first-child,
 .my-8 {
   margin-top: 2rem;
   margin-bottom: 2rem;
+}
+
+.mx-\[-180px\] {
+  margin-left: -180px;
+  margin-right: -180px;
 }
 
 .mb-2 {
@@ -2165,6 +2175,10 @@ table.map-table tr th:first-child,
 
 .grid {
   display: grid;
+}
+
+.hidden {
+  display: none;
 }
 
 .aspect-\[1\/1\] {
@@ -2651,10 +2665,6 @@ table.map-table tr th:first-child,
   font-size: 30px;
 }
 
-.text-\[36px\] {
-  font-size: 36px;
-}
-
 .text-\[44px\] {
   font-size: 44px;
 }
@@ -2682,7 +2692,7 @@ table.map-table tr th:first-child,
 
 .text-red {
   --tw-text-opacity: 1;
-  color: rgb(255 4 4 / var(--tw-text-opacity));
+  color: rgb(151 0 9 / var(--tw-text-opacity));
 }
 
 .text-thick-red {

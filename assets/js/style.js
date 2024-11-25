@@ -1,4 +1,8 @@
 $(document).ready(function () {
+  $(".toggle-image").on("click", function(e) {
+    e.preventDefault(); // Prevent default anchor behavior
+    $(".toggle-target").slideToggle(); // Toggle the image visibility with animation
+});
   var topSec01Slider = new Swiper('#topSec01Slider', {
     slidesPerView: 3, // Show 4 slides
     spaceBetween: 20, // Space between slides in pixels

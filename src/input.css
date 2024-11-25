@@ -212,7 +212,7 @@
   /* -- -- price accordion */
   .price-header {
     position: relative;
-    @apply bg-red cursor-pointer font-bold text-white text-center py-[20px] text-[22px] leading-loose;
+    @apply bg-red cursor-pointer font-bold text-white text-center py-[20px] text-[18px] leading-loose;
   }
   .price-header [alt='arrow-top'] {
     @apply top-1/2 right-[30px] absolute;
@@ -473,7 +473,7 @@
     @apply !w-[350px] !px-8;
   }
   .const-sec h3 {
-    @apply relative text-[30px] font-bold ps-4 mb-8;
+    @apply relative text-[20px] font-bold ps-4 mb-8;
   }
   .const-sec h3::after {
     content: '';
@@ -527,7 +527,7 @@
     @apply inline-block text-[12px] rounded-[30px] px-[10px] py-[4px] bg-[#F5F5F5];
   }
   .column-item-content .category {
-    @apply top-0 inline-block absolute -translate-y-1/2 left-[22px] w-fit py-1.5 px-4 text-white;
+    @apply top-0 inline-block absolute -translate-y-1/2 left-[22px] w-fit py-1.5 px-4 text-white text-[14px];
   }
   .column-item-content .category[data-categroy='コーティング'] {
     @apply bg-brown;
