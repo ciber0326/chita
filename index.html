@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+    <link rel="stylesheet" href="./dist/output.css">
+</head>
+
+<body>
+    <header class="pt-3.5">
+        <div class="h-container">
+            <a href="javascript:;" aria-label="site-logo">
+                <img src="./assets/img/logo.png" alt="logo" class="block mb-5" width="406" height="113">
+            </a>
+            <nav class="flex flex-wrap justify-between items-center mb-4">
+                <a class="inquiry-btn" href="#ex1" rel="modal:open">
+                    電話番号・営業時間・アクセス
+                </a>
+                <div aria-label="social" class="flex gap-x-4">
+                    <a href="javascript:;" aria-label="facebook-link">
+                        <img src="./assets/img/facebook.png" alt="facebook-icon" width="30" height="30">
+                    </a>
+                    <a href="javascript:;" aria-label="instagram-link">
+                        <img src="./assets/img/instagram.png" alt="instagram-icon" width="30" height="30">
+                    </a>
+                </div>
+                <a href="javascript:;" aria-label="inquiry" class="flex items-center gap-x-1 font-bold">
+                    <img src="./assets/img/book.png" alt="book-img" width="33" height="27">
+                    スクールへのお問い合わせ
+                </a>
+                <a href="tel+:0800-812-7809" class="font-bold text-[30px]">0800-812-7809</a>
+                <a href="javascript:;" class="reservation-btn">
+                    ご予約は<br>
+                    コチラ！
+                </a>
+            </nav>
+
+        </div>
+        <nav class="bg-blue text-18">
+            <div class="h-container">
+                <div class="flex justify-between items-center px-10 py-4 font-black text-white">
+                    <a href="./index.html">ホーム</a>
+                    <a href="./price.html">料金・割引・特典</a>
+                    <a href="./map.html">地図・店舗紹介</a>
+                    <a href="./reservation.html">ご予約・お問い合わせ</a>
+                    <a href="./voice.html">お客様の声・Q&A</a>
+                    <a href="./construction.html">施工事例</a>
+                    <a href="./column.html">コラム</a>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <div id="ex1" class="p-0 w-full modal">
+        <div class="bg-blue py-4 font-bold text-[24px] text-center text-white">
+            電話番号・営業時間・アクセス
+        </div>
+        <div class="modal-body">
+            <div class="gap- gap-x-[20px] gap-y-[20px] grid grid-cols-2">
+                <a class="window" href="https://chita-coating.com/map_yutai.html#map1">
+                    <p class="title">長浦インター店</p>
+                    <p class="content">
+                        ・長浦駅から車で4分<br>
+                        ・阿久比ICから車で10分<br>
+                        <br><br>
+                        ★「中日ガス」さんの横、向かいには「ファミリーマート知多岡田店」がございます。
+                    </p>
+                </a>
+                <div class="window">
+                    <p class="title">コーティングのご予約・問合せ(通話無料)
+                    </p>
+                    <p class="text-center content">
+                        <a href="tel:0800-812-7809" class="flex items-center gap-x-4 font-bold text-[44px] text-center">
+                            <img src="./assets/img/phone.png" alt="phone-icon" class="rounded-[50%]" width="80"
+                                height="80">
+                            0800-812-7809
+                        </a><br>
+                        営業時間: 8:00～19:00 (定休日：なし)
+                    </p>
+                </div>
+                <a class="window" href="https://chita-coating.com/map_yutai.html#map2">
+                    <p class="title">新舞子店
+                    </p>
+                    <p class="text-center content">
+                        リニューアルオープン準備中
+                    </p>
+                </a>
+                   
+                <div class="window">
+                    <p class="title">2025年4月リニューアルオープン予定<br>
+                        -新舞子店で施工完了後のお問合せ-
+                    </p>
+                    <p class="text-center content">
+                        <a href="tel:0120-996-777" class="flex items-center gap-x-4 font-bold text-[44px] text-center">
+                            <img src="./assets/img/phone.png" alt="phone-icon" class="rounded-[50%]" width="80"
+                                height="80">
+                            0120-996-777
+                        </a><br>
+                        営業時間: 9:00～19:00 (定休日：月曜 ※月曜祝日の場合は翌火曜)
+                    </p>
+                </div>
+            </div>
+            <img src="./assets/img/modal-img-01.png" class="block mx-auto my-4 max-w-full" alt="modal-ctn-img">
+            <a href="https://chita-coating.com/choice/" class="w-full">
+                <img src="./assets/img/modal-img-02.png" class="block mx-auto my-4 max-w-full" alt="modal-ctn-img">
+            </a>
+            <a href="https://handa-coating.com/" class="w-full">
+                <img src="./assets/img/modal-img-03.png" class="block mx-auto my-4 max-w-full" alt="modal-ctn-img">
+            </a>
+
+        </div>
+        <a href="#" rel="modal:close">Close</a>
+    </div>
+    <main id="top">
+        <section id="hero" class="relative">
+            <div class="px-0 o-container">
+                <img src="./assets/img/main-visual.png" alt="main-visual" class="w-full">
+            </div>
+            <img src="./assets/img/yello-block.png" alt="yellow-block" class="bottom-0 left-0 z-[-1] absolute w-full">
+        </section>
+        <section id="heroSlider" class="bg-blue py-7">
+            <div class="o-container">
+                <div class="gap-x-4 gap-y-4 grid md:grid-cols-2 lg:grid-cols-4">
+                    <img src="./assets/img/home/hero-slider-img-01.png" alt="hero-slider-img"
+                        class="w-full aspect-[31/20]">
+                    <img src="./assets/img/home/hero-slider-img-02.png" alt="hero-slider-img"
+                        class="w-full aspect-[31/20]">
+                    <img src="./assets/img/home/hero-slider-img-03.png" alt="hero-slider-img"
+                        class="w-full aspect-[31/20]">
+                    <img src="./assets/img/home/hero-slider-img-04.png" alt="hero-slider-img"
+                        class="w-full aspect-[31/20]">
+                </div>
+            </div>
+        </section>
+        <section id="top-sec-01" class="py-[30px]" style="
+                background-image: url('./assets/img/light-blue-bg.png'), url(./assets/img/light-blue-bg.png);
+                background-size: 100% auto, 100% auto;
+                background-repeat: no-repeat;
+                background-position: center 0, center bottom;
+
+            ">
+            <div class="s-container">
+                <img src="./assets/img/home/sec-01/sec-01-img-01.jpg" alt="sec-01-img-01" class="w-full">
+                <br>
+                <img src="./assets/img/home/sec-01/sec-01-img-02.jpg" alt="sec-01-img-02" class="w-full">
+            </div><br>
+            <div class="relative bg-white mb-[90px] p-[72px] rounded-lg lg-container">
+                <div class="py-8 swiper-container" id="topSec01Slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-01/slider/slider-01.jpg" alt="sec-01-slider-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-01/slider/slider-02.jpg" alt="sec-01-slider-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-01/slider/slider-03.jpg" alt="sec-01-slider-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-01/slider/slider-04.jpg" alt="sec-01-slider-img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-01/slider/slider-05.jpg" alt="sec-01-slider-img">
+                        </div>
+
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+
+                </div>
+                <div class="translate-x-4 swiper-prev">
+                    <img src="./assets/img/icon/arrow-left.png" width="10" height="15" alt="arrow-left">
+                </div>
+                <div class="-translate-x-4 swiper-next">
+                    <img src="./assets/img/icon/arrow-right.png" width="10" height="15" alt="arrow-right">
+                </div>
+            </div>
+            <div class="s-container">
+
+                <div>
+                    <img src="./assets/img/home/sec-01/banner/banner-01.png" alt="banner-img" class="w-full">
+                    <a href="javascript:;"
+                        class="flex justify-center items-center gap-x-4 bg-yellow py-2 rounded-lg w-full font-black text-[25px] group">
+                        詳しくはコチラ
+                        <span
+                            class="transition-transform group-hover:translate-x-1 duration-300 shape-next-arrow"></span>
+                    </a>
+                </div>
+                <img src="./assets/img/home/sec-01/banner/banner-02.png" alt="banner-img" class="py-1 pt-2 w-full">
+                <img src="./assets/img/home/sec-01/banner/banner-03.png" alt="banner-img" class="py-1 w-full">
+                <img src="./assets/img/home/sec-01/banner/banner-04.png" alt="banner-img" class="py-1 w-full">
+
+
+            </div>
+        </section>
+        <section id="top-sec-02" class="py-[30px]">
+            <div class="o-container">
+
+                <img src="./assets/img/home/sec-02/title.png" alt="title" aria-label="当店の5つのすごい!" width="877"
+                    height="197" class="block mx-auto mb-8">
+                <div class="flex flex-wrap justify-center items-center gap-4">
+                    <a href="javascript:;" style="
+                            background-image:  linear-gradient(to bottom, #2a8141b9, #2a8141b9),url(./assets/img/home/sec-02/cards/card-01.jpg);
+                            background-position: center center, center center;
+                            background-repeat: no-repeat;
+                            background-size: cover cover;
+                            
+                        " class="card-item group">
+                        <img src="./assets/img/home/sec-02/cards/Background-01.png" alt="card-icon" class="h-fit"
+                            width="60" height="60">
+                        <div class="font-black text-white">
+                            <p class="text-[20px] sm:text-[24px]">
+                                信頼の実績<br>
+                                累計12,000台以上
+                            </p>
+                            <br>
+                            <p class="text-[16px] sm:text-[18px]">
+                                詳しくはここをクリック!
+                            </p>
+
+                        </div>
+                        <div
+                            class="flex justify-center items-center bg-white rounded-[50%] w-[30px] h-fit transition-transform group-hover:translate-x-[20%] duration-300 aspect-[1/1] self-end">
+                            <svg class="h-fit" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.48825 0.503941L5.11328 1.87891L10.6131 7.37877L11.9881 6.0038L6.48825 0.503941Z"
+                                    fill="#2A8141" />
+                                <path
+                                    d="M11.9882 6.00387L10.6133 4.62891L5.11342 10.1288L6.48839 11.5037L11.9882 6.00387Z"
+                                    fill="#2A8141" />
+                                <path d="M0.015625 5.02816V6.97266H9.73809V5.02816H0.015625Z" fill="#2A8141" />
+                            </svg>
+                        </div>
+
+
+                    </a>
+                    <a href="javascript:;" style="
+                            background-image:  linear-gradient(to bottom, #8F921Fb9, #8F921Fb9),url(./assets/img/home/sec-02/cards/card-01.jpg);
+                            background-position: center center, center center;
+                            background-repeat: no-repeat;
+                            background-size: cover cover;
+                            
+                        " class="card-item group">
+                        <img src="./assets/img/home/sec-02/cards/Background-02.png" alt="card-icon" class="h-fit"
+                            width="60" height="60">
+                        <div class="font-black text-white">
+                            <p class="text-[18px] sm:text-[22px]">
+                                キーパー正規代理店<br>
+                                施工証明書も発行!
+                            </p>
+                            <br>
+                            <p class="text-[16px] sm:text-[18px]">
+                                詳しくはここをクリック!
+                            </p>
+
+                        </div>
+                        <div
+                            class="flex justify-center items-center bg-white rounded-[50%] w-[30px] h-fit transition-transform group-hover:translate-x-[20%] duration-300 aspect-[1/1] self-end">
+                            <svg class="h-fit" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.48825 0.503941L5.11328 1.87891L10.6131 7.37877L11.9881 6.0038L6.48825 0.503941Z"
+                                    fill="#8F921F" />
+                                <path
+                                    d="M11.9882 6.00387L10.6133 4.62891L5.11342 10.1288L6.48839 11.5037L11.9882 6.00387Z"
+                                    fill="#8F921F" />
+                                <path d="M0.015625 5.02816V6.97266H9.73809V5.02816H0.015625Z" fill="#8F921F" />
+                            </svg>
+                        </div>
+
+
+                    </a>
+                    <a href="javascript:;" style="
+                            background-image:  linear-gradient(to bottom, #982472b9, #982472b9),url(./assets/img/home/sec-02/cards/card-01.jpg);
+                            background-position: center center, center center;
+                            background-repeat: no-repeat;
+                            background-size: cover cover;
+                            
+                        " class="card-item group">
+                        <img src="./assets/img/home/sec-02/cards/Background-03.png" alt="card-icon" class="h-fit"
+                            width="60" height="60">
+                        <div class="font-black text-white">
+                            <p class="text-[20px] sm:text-[24px]">
+                                他社圧倒の格安料金<br>
+                                格安カーコーティング
+                            </p>
+                            <br>
+                            <p class="text-[16px] sm:text-[18px]">
+                                詳しくはここをクリック!
+                            </p>
+
+                        </div>
+                        <div
+                            class="flex justify-center items-center bg-white rounded-[50%] w-[30px] h-fit transition-transform group-hover:translate-x-[20%] duration-300 aspect-[1/1] self-end">
+                            <svg class="h-fit" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.48825 0.503941L5.11328 1.87891L10.6131 7.37877L11.9881 6.0038L6.48825 0.503941Z"
+                                    fill="#982472" />
+                                <path
+                                    d="M11.9882 6.00387L10.6133 4.62891L5.11342 10.1288L6.48839 11.5037L11.9882 6.00387Z"
+                                    fill="#982472" />
+                                <path d="M0.015625 5.02816V6.97266H9.73809V5.02816H0.015625Z" fill="#982472" />
+                            </svg>
+                        </div>
+
+
+                    </a>
+                    <a href="javascript:;" style="
+                            background-image:  linear-gradient(to bottom, #AB0505b9, #AB0505b9),url(./assets/img/home/sec-02/cards/card-01.jpg);
+                            background-position: center center, center center;
+                            background-repeat: no-repeat;
+                            background-size: cover cover;
+                            
+                        " class="card-item group">
+                        <img src="./assets/img/home/sec-02/cards/Background-04.png" alt="card-icon" class="h-fit"
+                            width="60" height="60">
+                        <div class="font-black text-white">
+                            <p class="text-[20px] sm:text-[24px]">
+                                最短2時間施工<br>
+                                代車も無料
+                            </p>
+                            <br>
+                            <p class="text-[16px] sm:text-[18px]">
+                                詳しくはここをクリック!
+                            </p>
+
+                        </div>
+                        <div
+                            class="flex justify-center items-center bg-white rounded-[50%] w-[30px] h-fit transition-transform group-hover:translate-x-[20%] duration-300 aspect-[1/1] self-end">
+                            <svg class="h-fit" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.48825 0.503941L5.11328 1.87891L10.6131 7.37877L11.9881 6.0038L6.48825 0.503941Z"
+                                    fill="#AB0505" />
+                                <path
+                                    d="M11.9882 6.00387L10.6133 4.62891L5.11342 10.1288L6.48839 11.5037L11.9882 6.00387Z"
+                                    fill="#AB0505" />
+                                <path d="M0.015625 5.02816V6.97266H9.73809V5.02816H0.015625Z" fill="#AB0505" />
+                            </svg>
+                        </div>
+
+
+                    </a>
+                    <a href="javascript:;" style="
+                            background-image:  linear-gradient(to bottom, #124A94b9, #124A94b9),url(./assets/img/home/sec-02/cards/card-01.jpg);
+                            background-position: center center, center center;
+                            background-repeat: no-repeat;
+                            background-size: cover cover;
+                            
+                        " class="card-item group">
+                        <img src="./assets/img/home/sec-02/cards/Background-05.png" alt="card-icon" class="h-fit"
+                            width="60" height="60">
+                        <div class="font-black text-white">
+                            <p class="text-[20px] sm:text-[24px]">
+                                お支払いはお客様の <br>
+                                ご都合に合わせて
+                            </p>
+                            <br>
+                            <p class="text-[16px] sm:text-[18px]">
+                                詳しくはここをクリック!
+                            </p>
+
+                        </div>
+                        <div
+                            class="flex justify-center items-center bg-white rounded-[50%] w-[30px] h-fit transition-transform group-hover:translate-x-[20%] duration-300 aspect-[1/1] self-end">
+                            <svg class="h-fit" width="12" height="12" viewBox="0 0 12 12" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.48825 0.503941L5.11328 1.87891L10.6131 7.37877L11.9881 6.0038L6.48825 0.503941Z"
+                                    fill="#124A94" />
+                                <path
+                                    d="M11.9882 6.00387L10.6133 4.62891L5.11342 10.1288L6.48839 11.5037L11.9882 6.00387Z"
+                                    fill="#124A94" />
+                                <path d="M0.015625 5.02816V6.97266H9.73809V5.02816H0.015625Z" fill="#124A94" />
+                            </svg>
+                        </div>
+
+
+                    </a>
+                </div>
+                <div class="s-container">
+
+                    <img src="./assets/img/home/sec-02/google-banner.png" alt="google-banner" class="py-20 w-full">
+                    <img src="./assets/img/home/sec-02/brown-banner-01.png" alt="google-banner"
+                        class="mx-auto py-2 w-full max-w-[1176px]">
+                    <img src="./assets/img/home/sec-02/brown-banner-02.png" alt="google-banner"
+                        class="mx-auto py-2 w-full max-w-[1176px]">
+                    <img src="./assets/img/home/sec-02/brown-banner-03.png" alt="google-banner"
+                        class="mx-auto py-2 w-full max-w-[1176px]">
+                    <iframe src="https://www.youtube.com/embed/-cywBRl6qsE?rel=0" frameborder="0" id="topYoutube"></iframe>
+                    <ul class="bg-light-blue px-4 py-8 w-full text-white leading-loose list-disc ps-8">
+                        <li>コーティング被膜の定着に悪影響</li>
+                        <li>放置すると錆びの原因に</li>
+                        <li>洗車の際の汚れ落ちが悪くなる</li>
+                    </ul>
+                    <br><br>
+                </div>
+                <div id="sec-02-slider">
+                    <h3 style="
+                        background-image: url(./assets/img/home/sec-02/slider/bg.gif);
+                        background-repeat: repeat-x;
+                        
+
+                    " class="mb-8 py-4 font-bold text-[24px] text-center">新着施工事例</h3>
+
+                    <div class="gap-x-4 gap-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                        <img src="./assets/img/home/sec-02/slider/slider-01.jpg" alt="sec-02-slider-img">
+                        <img src="./assets/img/home/sec-02/slider/slider-02.jpg" alt="sec-02-slider-img">
+                        <img src="./assets/img/home/sec-02/slider/slider-03.jpg" alt="sec-02-slider-img">
+                        <img src="./assets/img/home/sec-02/slider/slider-04.jpg" alt="sec-02-slider-img">
+
+                        <img src="./assets/img/home/sec-02/slider/slider-05.jpg" alt="sec-02-slider-img">
+                        <img src="./assets/img/home/sec-02/slider/slider-06.jpg" alt="sec-02-slider-img">
+                        <img src="./assets/img/home/sec-02/slider/slider-07.jpg" alt="sec-02-slider-img">
+                        <img src="./assets/img/home/sec-02/slider/slider-09.jpg" alt="sec-02-slider-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="top-sec-03" class="relative bg-[#D9D9D9] py-[30px]">
+            <img src="./assets/img/home/sec-03/title.png" alt="sec-03-title"
+                class="block mx-auto mb-[124px] w-[1000px] max-w-full">
+            <img src="./assets/img/home/sec-03/quote-left.png" alt="quote-left" width="292" height="310"
+                class="quote-img">
+            <img src="./assets/img/home/sec-03/quote-right.png" alt="quote-right" width="292" height="310"
+                class="quote-img">
+            <div id="top-sec-03-slider-wrapper" class="px-8">
+
+                <div class="px-3 py-8 swiper-container" id="topSec03Slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-03/slider/slider-01.jpg" alt="sec-03-slider-img">
+                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
+                                <p class="text-[64px]">
+                                    5.0
+                                </p>
+                                <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
+                                <p class="mb-4 leading-loose">
+                                    コーティングするお店を探していたところ、友人の紹介でスーパーウォッシュさんにEX
+                                    KEEPERを施工して頂きました。施工メニューの説明も親切･丁寧で良い対応でしたよ！コーティングの事で不明な点も親身になって相談に乗ってくれるので安心です。アフターメンテナンスもしっかりしているのでオススメです(^^)v
+                                </p>
+                                <p class="text-[24px]">S・K様　スーパーウォッシュ東新潟店</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-03/slider/slider-02.jpg" alt="sec-03-slider-img">
+                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
+                                <p class="text-[64px]">
+                                    5.0
+                                </p>
+                                <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
+                                <p class="mb-4 leading-loose">
+                                    コーティングするお店を探していたところ、友人の紹介でスーパーウォッシュさんにEX
+                                    KEEPERを施工して頂きました。施工メニューの説明も親切･丁寧で良い対応でしたよ！コーティングの事で不明な点も親身になって相談に乗ってくれるので安心です。アフターメンテナンスもしっかりしているのでオススメです(^^)v
+                                </p>
+                                <p class="text-[24px]">S・K様　スーパーウォッシュ東新潟店</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-03/slider/slider-03.jpg" alt="sec-03-slider-img">
+                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
+                                <p class="text-[64px]">
+                                    5.0
+                                </p>
+                                <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
+                                <p class="mb-4 leading-loose">
+                                    コーティングするお店を探していたところ、友人の紹介でスーパーウォッシュさんにEX
+                                    KEEPERを施工して頂きました。施工メニューの説明も親切･丁寧で良い対応でしたよ！コーティングの事で不明な点も親身になって相談に乗ってくれるので安心です。アフターメンテナンスもしっかりしているのでオススメです(^^)v
+                                </p>
+                                <p class="text-[24px]">S・K様　スーパーウォッシュ東新潟店</p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./assets/img/home/sec-03/slider/slider-04.jpg" alt="sec-03-slider-img">
+                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
+                                <p class="text-[64px]">
+                                    5.0
+                                </p>
+                                <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
+                                <p class="mb-4 leading-loose">
+                                    コーティングするお店を探していたところ、友人の紹介でスーパーウォッシュさんにEX
+                                    KEEPERを施工して頂きました。施工メニューの説明も親切･丁寧で良い対応でしたよ！コーティングの事で不明な点も親身になって相談に乗ってくれるので安心です。アフターメンテナンスもしっかりしているのでオススメです(^^)v
+                                </p>
+                                <p class="text-[24px]">S・K様　スーパーウォッシュ東新潟店</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                    <!-- Add Navigation -->
+
+                </div>
+            </div>
+        </section>
+        <section id="top-sec-04" class="relative py-[30px]">
+            <img src="./assets/img/home/sec-04/eye-catch.png" alt="eye-catch"
+                class="block mx-auto mb-[158px] w-[1576px] max-w-[unset] lg:max-w-[80%]">
+            <div class="s-container">
+                <ul class="sec-04-lists">
+                    <li>
+                        <h5 class="title">
+                            <span>信頼の実績</span><br>
+                            年間2,500台！
+                        </h5>
+                        <p class="short-desc">
+                            新潟市エリア・鶴岡市エリアで累計12,000台以上の施行実績を誇り、<br>
+                            キーパーコーティング技術資格者43名と多数の有資格者が在籍しています！
+                        </p>
+                        <br><br>
+                        <p>
+                            私達の会社は、新潟市エリア・鶴岡市エリアのお客様のご愛顧を頂き、おかげ様でコーティング施工実績は
+                            <span class="text-red">
+                                累計で12,000台
+                            </span>
+                            を突破！ 
+                            <br>
+                            これこそがお客様の
+                            <span class="text-red">
+                                信頼の証
+                            </span>
+                            です！
+
+                        </p>
+                        <br><br>
+                        <p>
+                            また、全店キーパーコーティングの技術資格を持ったスタッフが施工致します！
+                            <br>
+                            EXキーパー資格者4名、キーパーコーティング技術1級資格者36名、キーパーコーティング技術2級資格者3名が在席しております。
+                        </p>
+                        <p>
+                            多くの資格者が在籍している当社だからこそ、安心してお客様の愛車をお預け頂けるかと存じます。
+                        </p>
+                        <a href="javascript:;" class="my-8 blue-gradient-btn group">
+                            コーティングメニューはこちら
+                            <span class="shape-next-arrow">
+                            </span>
+                        </a>
+
+                        <img src="./assets/img/home/sec-04/list-01-img.jpg" alt="list-01-img" width="660" height="495"
+                            class="block mx-auto max-w-[100%]">
+                    </li>
+                    <li>
+                        <h5 class="title">
+                            <span>キーパー正規代理店</span><br>
+                            施工証明書も発行！
+                        </h5>
+                        <p class="short-desc">
+                            日本ダントツの
+                            <span class="text-red">
+                                カーコーティングブランド、キーパーの正規代理店
+                            </span>
+                            だからこその施工品質！
+                        </p>
+                        <br><br>
+                        <p>
+                            私達キーパープロショップは、新潟市エリア・鶴岡市エリアのカーコーティング専門店として、日本ダントツのカーコーティングブランド、キーパーの正規代理店として認定を受けております！<br>
+                            プロ専用の設備、道具、材料とプロのカーコーティング技術で愛車をピカピカにします。
+
+                        </p>
+                        <br><br>
+                        <p>
+                            当店では全てのキーパーコーティングに
+                            <span class="text-red">
+
+                                施工証明書の発行
+                            </span>
+                            を実施しております。お車を鈑金修理される場合等には、カーコーティングの部分施工も承っており、各種
+                            <span class="text-red">
+                                自動車保険にも対応
+                            </span>
+                            しているので、万が一事故が起こってしまった場合でもカーコーティング代が返金されます。
+                        </p>
+                        <br><br>
+                        <p>
+                            コーティング施工車の売却価格がお得になったという喜びの声も多く頂いております。是非一度ご来店ください！
+                        </p>
+
+
+                        <img src="./assets/img/home/sec-04/list-02-img.jpg" alt="list-01-img" width="913" height="511"
+                            class="block mx-auto max-w-[100%]">
+                    </li>
+
+                    <li>
+                        <h5 class="title">
+                            <span>お得な割引料金</span><br>
+                            格安カーコーティング
+                        </h5>
+                        <p class="short-desc">
+                            WEB予約限定でコーティング施行
+                            <span class="text-red">
+                                10％
+                            </span>オフ！
+
+                        </p>
+                        <div class="bg-[#F2F2F2] p-8">
+
+                            <div class="grid grid-cols-1 md:grid-cols-2 rounded-[30px] overflow-hidden">
+
+                                <div class="bg-white px-[3rem] py-[3rem]">
+                                    <img src="./assets/img/home/sec-04/list-03-img-01.png" alt="list-03-img"
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <img src="./assets/img/home/sec-04/list-03-img-02.png" alt="list-03-img"
+                                    class="h-full object-cover">
+                            </div>
+                        </div>
+                        <br><br>
+                        <p>
+                            WEBでご予約頂いたお客様限定で、コーティングの
+                            <span class="text-red">
+                                施工料金10％割引
+                            </span>
+                            を実施中！<br>
+                            また、
+                            <span class="text-red">
+
+                                他社にはないお得な特典
+                            </span>
+                            もお客様にご提供しております。キーパーコーティングをお考えのお客様は、是非、当店にお任せください！
+                        </p>
+                        <br><br>
+                        <p>
+                            当店で、コーティングを実施頂く際には、お車のボディの状態を一緒に確認しながら、ご予算・ご要望に応じて、 最適なキーパーコーティングをご提案いたします。<br>
+                            少しでも新潟市エリア・鶴岡市エリアのお客様に喜んでいただくために・・・私達は努力していきます！
+
+                        </p>
+                        <br><br>
+                        <p>
+                             ①キーパーコーティングの技術スタッフが自動車整備や接客も兼任しているので、
+                            <span class="text-red">
+                                人件費を削減
+                            </span>
+                            することが可能！<br>
+                             ②最新設備のコーティング専門店だからこそできる作業工程で、
+                            <span class="text-red">
+
+                                WEB予約の方限定！<br>
+                                おトクな割引実施中!
+                            </span>
+                        </p>
+                        <a href="javascript:;" class="my-8 blue-gradient-btn group">
+                            コーティングメニューはこちら
+                            <span class="shape-next-arrow">
+                            </span>
+                        </a>
+
+                        <img src="./assets/img/home/sec-04/list-03-img.jpg" alt="list-03-img" width="707" height="465"
+                            class="block mx-auto max-w-[100%]">
+                    </li>
+                    <li>
+                        <h5 class="title">
+                            <span>最短2時間施工</span><br>
+                            代車も無料
+                        </h5>
+                        <p class="text-center short-desc">
+                            熟練の技を短時間で提供！
+                        </p>
+                        <br><br>
+                        <p>
+                            長年積み重ねてきた経験やノウハウにより、ガラスコーティングでも、長時間お待たせすることはなくなりました。<br>
+                            日時をご相談頂ければ、
+                            <span class="text-red">
+
+                                早ければ最短2時間（クリスタルキーパー）、遅くとも 2日（ダイヤモンドキーパー）でお引き取りが可能
+                            </span>
+                            です。<br>
+                            また、カーコーティング施工はご予約可能なので、安心して予定を立てて頂くことができます。
+
+                        </p><br><br>
+                        <p>
+                            「コーティング施行を待っている間に行きたいところがある！」<br>
+                            「納車は明日でいいけど、車は使いたい！」
+
+                        </p><br><br>
+                        <p>
+                            そういった新潟市エリア・鶴岡市エリアのお客様の声にお応えして、当店でコーティングを実施頂いたお客様には、
+                            <span class="text-red">
+                                無料代車をご用意
+                            </span>
+                            しています！
+                        </p><br><br>
+                        <p>
+                            ※長時間のカーコーティング作業メニューに限ります。予めご相談ください。
+                        </p><br><br>
+                        <p>
+
+                             尚、カーコーティング作業時にはシートカバーをかけて大切なお車を丁寧に保護いたします！<br>
+                            安心してお車をお預けください。
+                        </p>
+
+
+
+                        <a href="javascript:;" class="my-8 blue-gradient-btn group">
+                            コーティングって？！
+                            <span class="shape-next-arrow">
+                            </span>
+                        </a>
+
+                        <img src="./assets/img/home/sec-04/list-04-img.jpg" alt="list-img" width="756" height="446"
+                            class="block mx-auto max-w-[100%]">
+                    </li>
+                    <li>
+                        <h5 class="title">
+                            <span>仕上がりに差をつける</span><br>
+                            コーティングブース完備
+                        </h5>
+                        <p class="text-center short-desc">
+                            キーパー技研が毎月発行している全国情報誌にも掲載されました！<br>
+                            コーティングに最適な設備でより美しい仕上がりへ！
+                        </p>
+                        <br><br>
+                        <p>
+                            より綺麗にコーティングを施工するためには作業環境が非常に重要です。<br>当店は専用の防塵コーティングブースを完備しており、細かい埃や日光を遮断した環境下で作業を実施いたします！また、
+                            <span class="text-red">
+
+                                雨の日でもコーティング施工可能
+                            </span>
+                            です！<br>
+                            洗車中に直射日光を避けることで、
+                            <span class="text-red">
+
+                                お車に付着する水シミを防ぐ
+                            </span>
+                            ことができます。<br>また、細かい埃や花粉、廃棄ガス等を遮断するスペースで研磨やコーティングを施工することで、
+                            <span class="text-red">
+
+                                仕上がりがよりキレイ
+                            </span>
+                            になります！
+                        </p>
+
+
+
+
+
+                        <img src="./assets/img/home/sec-04/list-04-img.jpg" alt="list-img" width="749" height="562"
+                            class="block mx-auto max-w-[100%]">
+                    </li>
+                    <li>
+                        <h5 class="title">
+                            <span>お支払いはお客様の</span><br>
+                            ご都合に合わせて
+                        </h5>
+                        <p class="short-desc">
+                            現金のお支払以外に、各種カードも扱っております。
+                        </p>
+                        <br><br>
+                        <p>
+                            「今月、予想外の出費があったしなぁ…」<br>
+                             「できれば、今月の支払額を抑えたいな…」 等<br>
+                            新潟市エリア・鶴岡市エリアのお客様のご要望に合せてカーコーティング施行料金のお支払い方法がお選び頂けます。
+
+                        </p><br><br>
+                        <p>
+                            現金の他、各種カードでもお支払い頂けます。
+                        </p>
+                        <br>
+                        <img src="./assets/img/home/sec-04/credit-cards.jpg" alt="credit-cards"
+                            class="block mx-auto max-w-full" width="660" height="152">
+                        <br>
+                        <img src="./assets/img/home/sec-04/cta.jpg" alt="cta" class="block mx-auto w-full">
+                        <br><br><br>
+                        <p
+                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 w-fit font-bold text-[24px] text-center">
+                            「コーティング」によって新車以上の輝きを長期間実現！
+                        </p>
+                        <p>
+                            「コーティング」は、塗装保護の役割を果たします。<br>
+                            塗装の上に配置するコーティング被膜は、塗装の身代わりとなって紫外線・酸性雨・黄砂を含んだ雨を受け、大事な塗装の代わりに傷み汚れてくれます。<br>さらに、コーティングの利点は、塗装の代わりに傷んだコーティング被膜を、再施工やメンテナンスによって容易に入れ替えることが出来る点にもあります。<br>コーティング自らが塗装の代わりに劣化することで、塗装を守るのです！
+                            最も大切にすべきなのは、「新鮮な塗装」です。自らが身代わりになって塗装を守ることがコーティング本来の役割だからです。<br>コーティング自らが塗装の代わりに劣化することで、塗装を守ります。
+                        </p>
+                        <br><br>
+                        <img src="./assets/img/home/sec-04/car.png" alt="car" class="block mx-auto max-w-full"
+                            width="379" height="253">
+                        <br>
+                        <p
+                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 w-fit font-bold text-[24px] text-center">
+                            「コーティング」施工車なら買取査定価格もアップ！
+                        </p>
+                        <br>
+                        <p>
+                            コーティングを車に施工することによって、紫外線や酸性雨から車の塗装を守ります。<br>
+                            また、走行中の空気やホコリ、洗車での摩擦による塗装の劣化も防ぎます。<br>
+                            コーティングをして5年走った車とコーティングをしていない車では、外観に大きな違いが出てくるのです。 よって、お車の買取査定価格が高くなるのも当然と言えます。<br>
+                            コーティングはまさに「車のアンチエイジング」なのです。
+                        </p>
+                        <img src="./assets/img/home/sec-04/car-head.png" alt="car" class="block mx-auto max-w-full"
+                            width="415" height="143">
+                        <a href="javascript:;"
+                            class="block bg-blue mx-auto py-4 w-[676px] font-black text-[24px] text-center text-white">
+                            エコダイヤキーパーが人気なワケ！
+                        </a><br>
+                        <img src="./assets/img/home/sec-04/banner-01.jpg" alt="banner"
+                            class="block mx-auto py-2 w-full">
+                        <img src="./assets/img/home/sec-04/banner-02.jpg" alt="banner"
+                            class="block mx-auto py-2 w-full">
+                        <br>
+                        <div class="gap-x-4 gap-y-4 grid grid-cols-2">
+                            <div>
+                                <h6 class="py-2 font-bold text-[24px] text-center by-solid">傷んだボディを新車のように</h6>
+                                <p>
+                                    研磨は衰えてしまったボディをもう一度新車のように戻すプロの技術なのです。塗装の状態に合わせた研磨は数工程に及び、塗装をコーティングが密着できる最良の状態にします。
+                                </p>
+                            </div>
+                            <div>
+                                <h6 class="py-2 font-bold text-[24px] text-center by-solid">
+                                    仕上げには必ずコーティングを
+                                </h6>
+                                <p>
+                                    研磨加工後には必ず高性能コーティングで表面を保護することをお勧めします。鏡面加工で得た最高の光沢を保護するとともに、相乗効果による新車以上の光沢を体験して下さい。
+                                </p>
+                            </div>
+                        </div>
+                        <br>
+                        <p
+                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 w-fit font-bold text-[24px] text-center">
+                            細密研磨
+                        </p><br>
+                        <div class="gap-x-4 gap-y-4 grid grid-cols-2">
+                            <div>
+                                <p>
+
+                                    キズのエッジ部分だけを磨き取る研磨。<br>
+                                    塗装本来の輝きを取り戻す。塗装の厚みは変わらない。
+                                </p>
+                                <img src="./assets/img/home/sec-04/img-later.png" alt="img-later"
+                                    class="block mx-auto w-full">
+
+                            </div>
+                            <div>
+                                <p class="border-[#000] mb-2 border-b font-bold text-[24px] text-center">
+                                    施工価格
+                                </p><br>
+                                <p class="bg-[#EEF0EE] p-8 !text-[18px]">
+                                    SSサイズ（ミラ、ワゴンR、ムーヴなど）<br>
+                                    ¥18,060 <br>
+                                    Sサイズ（アクア、フィット、ノートなど）<br>
+                                    ¥19,960 <br>
+                                    Mサイズ（プリウス、インサイト、キューブなど）<br>
+                                    ¥21,600 <br>
+                                    Lサイズ（クラウン、アコード、レガシィなど）<br>
+                                    ¥22,800 <br>
+                                    LLサイズ（アルファード、ステップワゴン、セレナなど）<br>
+                                    ¥25,200
+                                </p>
+                            </div>
+                        </div>
+                        <a href="javascript:;"
+                            class="block bg-green mx-auto py-4 w-[676px] font-black text-[24px] text-center text-white">
+                            知多市の地域情報
+                        </a>
+                        <p class="bg-[#E1D8C6] mb-[32px] px-[44px] py-[10px] rounded-lg">
+                            知多市の観光情報をまとめました！<br>
+                            知多市の観光スポットや、知多市で有名な食やイベントについて掲載！<br>
+                            コーティング前後の立ち寄りにもおすすめです。<br>
+                            当社のコーティング情報と合わせて楽しくチェック！
+                        </p>
+                        <p class="border-2 border-green p-[38px] rounded-lg !text-[18px] leading-loose">
+                            知多市は愛知県の自治体です。<br>
+                            知多市は愛知県の知多半島の北西部に位置する市で、市域の大半が標高20mから70mの丘陵であり、丘陵を刻む谷及び海岸に沿って、集落や市街地が発達しています。<br>
+                            知多市のおすすめスポットは、「新舞子マリンパーク」です。<br>
+                            新舞子マリンパークは、知多市緑浜町にある人口島の公園です。<br>
+                            名古屋市内から最も近い海水浴場としても知られ、夏季はたくさんの海水浴客が訪れます。<br>
+                            2005年に開港した「中部国際空港」からも比較的近く、低空飛行中の飛行機を見ることができます。<br>
+                            施設内は、全長400mの砂浜や、常設のビーチバレーコート、魚釣り施設があり、一年を通して遊べます。<br>
+                            ビーチに面したバーベキュー場でのお食事もおすすめです。<br>
+                            知多市にはその他に、「佐布里緑と花のふれあい公園」や「歴史民族博物館」などがあります。<br>
+                            知多市のおすすめグルメは、「おむすび屋天（そら）」の「おにぎり」です。<br>
+                            店内はカウンター席と座敷があり、アットホームな雰囲気です。<br>
+                            朝の6時から営業しているので、モーニングを味わうことができます。<br>
+                            おにぎりに使われているお米は、三重県産の「ミルキークイーン」です。<br>
+                            ミルキークイーンは、モチモチと柔らかく、しっとりとしているのが特徴です。<br>
+                            炊き加減は、その日炊く量によって調節しているというおにぎり専門店ならではのこだわりです。<br>
+                            しゃけ、おかか、ツナマヨは定番の具ですが、飽きのこない美味しさでおすすめです。<br>
+                            ランチやテイクアウトも展開しているのがありがたいですね。<br>
+                            お近くの際は是非立ち寄られてみてはいかがでしょうか。<br>
+                            以上、知多市のおすすめ観光情報で<br>
+                            当社のコーティングなどの自動車整備関連サービスをご利用の際にも是非チェックしてみて下さい。
+                        </p>
+
+
+
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="o-container">
+            <nav>
+                <a href="./index.html">
+                    ホーム
+                </a>
+                <a href="./price.html">
+                    料金・割引・特典
+                </a>
+                <a href="./map.html">
+                    地図・店舗紹介
+                </a>
+                <a href="./reservation.html">
+                    ご予約・お問い合わせ
+                </a>
+                <a href="./voice.html">
+                    お客様の声・Q&A
+                </a>
+                <a href="./construction.html">
+                    施工事例
+                </a>
+                <a href="./column.html">
+                    コラム
+                </a>
+
+            </nav>
+            <br>
+            <hr class="bg-[#E5E6E8]">
+            <br><br>
+            <p class="text-[12px] text-center">
+                <span>Copyright (C) 2024 All Rights Reserved.</span><br>
+                <span>
+                    当サイト内の全ての画像・文章の無断転載、転用を禁止致します。
+                </span>
+
+            </p>
+            <br><br>
+            <p class="font-black text-[24px] text-center">
+                知多・東海・大府で13920円のキーパーカーコーティング
+            </p>
+
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="./assets/js/style.js"></script>
+</body>
+
+</html>
