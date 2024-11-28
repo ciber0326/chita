@@ -100,8 +100,12 @@
   .modal-body .window .content {
     @apply px-6 py-4;
   }
-  .blocker {
-    z-index: 999999999999999999999999 !important;
+  
+  .jquery-modal {
+    z-index: 9999999999999 !important;
+  }
+  .jquery-modal.blocker.current {
+    @apply !z-[9999999999];
   }
   .sticky-nav {
     @apply w-fit right-0 absolute top-full z-[99999];
