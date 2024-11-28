@@ -17,12 +17,20 @@
 <body>
     <header class="pt-3.5">
         <div class="h-container">
-            <a href="javascript:;" aria-label="site-logo">
+            <!-- <a href="javascript:;" aria-label="site-logo">
                 <img src="./assets/img/logo.png" alt="logo" class="block mb-5" width="316">
-            </a>
+            </a> -->
             <nav class="flex flex-wrap justify-between items-center mb-4">
+                <a href="javascript:;" aria-label="site-logo">
+                    <img src="./assets/img/logo.png" alt="logo" class="block mb-5" width="316">
+                </a>
                 <a class="inquiry-btn" href="#ex1" rel="modal:open">
                     電話番号・営業時間・アクセス
+                </a>
+                
+                <a href="javascript:;" aria-label="inquiry" class="flex items-center gap-x-1 font-bold">
+                    <img src="./assets/img/book.png" alt="book-img" width="33" height="27">
+                    スクールへのお問い合わせ
                 </a>
                 <div aria-label="social" class="flex gap-x-4">
                     <a href="javascript:;" aria-label="facebook-link">
@@ -32,33 +40,41 @@
                         <img src="./assets/img/instagram.png" alt="instagram-icon" width="30" height="30">
                     </a>
                 </div>
-                <a href="javascript:;" aria-label="inquiry" class="flex items-center gap-x-1 font-bold">
-                    <img src="./assets/img/book.png" alt="book-img" width="33" height="27">
-                    スクールへのお問い合わせ
-                </a>
-                <a href="tel+:0800-812-7809" class="font-bold text-[30px]">0800-812-7809</a>
+                <!-- <a href="tel+:0800-812-7809" class="font-bold text-[30px]">0800-812-7809</a>
                 <a href="javascript:;" class="reservation-btn">
                     ご予約は<br>
                     コチラ！
-                </a>
+                </a> -->
             </nav>
 
         </div>
-        <nav class="bg-blue text-18">
-            <div class="h-container">
-                <div class="flex justify-between items-center px-10 py-4 font-black text-white">
-                    <a href="./index.html">ホーム</a>
-                    <a href="./price.html">料金・割引・特典</a>
-                    <a href="./map.html">地図・店舗紹介</a>
-                    <a href="./reservation.html">ご予約・お問い合わせ</a>
-                    <a href="./voice.html">お客様の声・Q&A</a>
-                    <a href="./construction.html">施工事例</a>
-                    <a href="./column.html">コラム</a>
-                </div>
-            </div>
-        </nav>
+       
 
     </header>
+    
+    <nav class="top-0 left-0 z-[99999] sticky bg-blue w-full text-[16px]">
+        <div class="h-container">
+            <div class="flex justify-between items-center px-10 py-4 font-black text-white">
+                <a href="./index.html">ホーム</a>
+                <a href="./price.html">料金・割引・特典</a>
+                <a href="./map.html">地図・店舗紹介</a>
+                <a href="./reservation.html">ご予約・お問い合わせ</a>
+                <a href="./voice.html">お客様の声・Q&A</a>
+                <a href="./construction.html">施工事例</a>
+                <a href="./column.html">コラム</a>
+            </div>
+        </div>
+        <nav class="sticky-nav">
+            <a href="javascript:;">
+                ご予約は<br>
+                コチラ！
+            </a>
+            <a href="tel+:0800-812-7809">
+                0800-812<br>
+                -7809
+            </a>
+        </nav>
+    </nav>
     <div id="ex1" class="p-0 w-full modal">
         <div class="bg-blue py-4 font-bold text-[24px] text-center text-white">
             電話番号・営業時間・アクセス
@@ -393,11 +409,11 @@
 
                     <img src="./assets/img/home/sec-02/google-banner.png" alt="google-banner" class="py-20 w-full">
                     <img src="./assets/img/home/sec-02/brown-banner-01.png" alt="google-banner"
-                        class="mx-auto py-2 w-full max-w-[1176px]">
+                        class="mx-auto w-full max-w-[1176px]">
                     <img src="./assets/img/home/sec-02/brown-banner-02.png" alt="google-banner"
-                        class="mx-auto py-2 w-full max-w-[1176px]">
+                        class="mx-auto w-full max-w-[1176px]">
                     <img src="./assets/img/home/sec-02/brown-banner-03.png" alt="google-banner"
-                        class="mx-auto py-2 w-full max-w-[1176px]">
+                        class="mx-auto w-full max-w-[1176px]">
                     <iframe src="https://www.youtube.com/embed/-cywBRl6qsE?rel=0" frameborder="0"
                         id="topYoutube"></iframe>
                     <ul class="bg-light-blue px-4 py-8 w-full text-white leading-loose list-disc ps-8">
@@ -442,8 +458,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <img src="./assets/img/home/sec-03/slider/slider-01.jpg" alt="sec-03-slider-img">
-                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
-                                <p class="text-[64px]">
+                            <div class="bg-white p-6 ps-[calc(40%+32px)]">
+                                <p class="text-[40px]">
                                     5.0
                                 </p>
                                 <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
@@ -456,8 +472,8 @@
                         </div>
                         <div class="swiper-slide">
                             <img src="./assets/img/home/sec-03/slider/slider-02.jpg" alt="sec-03-slider-img">
-                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
-                                <p class="text-[64px]">
+                            <div class="bg-white p-6 ps-[calc(40%+32px)]">
+                                <p class="text-[40px]">
                                     5.0
                                 </p>
                                 <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
@@ -470,8 +486,8 @@
                         </div>
                         <div class="swiper-slide">
                             <img src="./assets/img/home/sec-03/slider/slider-03.jpg" alt="sec-03-slider-img">
-                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
-                                <p class="text-[64px]">
+                            <div class="bg-white p-6 ps-[calc(40%+32px)]">
+                                <p class="text-[40px]">
                                     5.0
                                 </p>
                                 <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
@@ -484,8 +500,8 @@
                         </div>
                         <div class="swiper-slide">
                             <img src="./assets/img/home/sec-03/slider/slider-04.jpg" alt="sec-03-slider-img">
-                            <div class="bg-white p-8 ps-[calc(40%+32px)]">
-                                <p class="text-[64px]">
+                            <div class="bg-white p-6 ps-[calc(40%+32px)]">
+                                <p class="text-[40px]">
                                     5.0
                                 </p>
                                 <img src="./assets/img/home/sec-03/slider/star-lists.png" class="mb-4" alt="star-lists">
@@ -604,7 +620,7 @@
                             </span>オフ！
 
                         </p>
-                        <div class="bg-[#F2F2F2] mx-[-180px] p-8">
+                        <div class="bg-[#F2F2F2] mx-[-180px] p-8 max-w-full">
 
                             <div class="grid grid-cols-1 md:grid-cols-2 rounded-[30px] overflow-hidden">
 
@@ -678,22 +694,22 @@
                             です。<br>
                             また、カーコーティング施工はご予約可能なので、安心して予定を立てて頂くことができます。
 
-                        </p><br><br>
+                        </p><br>
                         <p>
                             「コーティング施行を待っている間に行きたいところがある！」<br>
                             「納車は明日でいいけど、車は使いたい！」
 
-                        </p><br><br>
+                        </p><br>
                         <p>
                             そういった新潟市エリア・鶴岡市エリアのお客様の声にお応えして、当店でコーティングを実施頂いたお客様には、
                             <span class="text-red">
                                 無料代車をご用意
                             </span>
                             しています！
-                        </p><br><br>
+                        </p><br>
                         <p>
                             ※長時間のカーコーティング作業メニューに限ります。予めご相談ください。
-                        </p><br><br>
+                        </p><br>
                         <p>
 
                              尚、カーコーティング作業時にはシートカバーをかけて大切なお車を丁寧に保護いたします！<br>
@@ -773,31 +789,35 @@
                         <img src="./assets/img/home/sec-04/cta.jpg" alt="cta" class="block mx-auto w-full">
                         <br><br><br>
                         <p
-                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 font-bold text-[18px] text-center">
+                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 font-bold text-[18px] text-center cursor-pointer slideToggle">
                             「コーティング」によって新車以上の輝きを長期間実現！
                         </p>
-                        <p>
-                            「コーティング」は、塗装保護の役割を果たします。<br>
-                            塗装の上に配置するコーティング被膜は、塗装の身代わりとなって紫外線・酸性雨・黄砂を含んだ雨を受け、大事な塗装の代わりに傷み汚れてくれます。<br>さらに、コーティングの利点は、塗装の代わりに傷んだコーティング被膜を、再施工やメンテナンスによって容易に入れ替えることが出来る点にもあります。<br>コーティング自らが塗装の代わりに劣化することで、塗装を守るのです！
-                            最も大切にすべきなのは、「新鮮な塗装」です。自らが身代わりになって塗装を守ることがコーティング本来の役割だからです。<br>コーティング自らが塗装の代わりに劣化することで、塗装を守ります。
-                        </p>
-                        <br><br>
-                        <img src="./assets/img/home/sec-04/car.png" alt="car" class="block mx-auto max-w-full"
-                            width="379" height="253">
-                        <br>
+                        <div class="slideToggleTarget">
+                            <p>
+                                「コーティング」は、塗装保護の役割を果たします。<br>
+                                塗装の上に配置するコーティング被膜は、塗装の身代わりとなって紫外線・酸性雨・黄砂を含んだ雨を受け、大事な塗装の代わりに傷み汚れてくれます。<br>さらに、コーティングの利点は、塗装の代わりに傷んだコーティング被膜を、再施工やメンテナンスによって容易に入れ替えることが出来る点にもあります。<br>コーティング自らが塗装の代わりに劣化することで、塗装を守るのです！
+                                最も大切にすべきなのは、「新鮮な塗装」です。自らが身代わりになって塗装を守ることがコーティング本来の役割だからです。<br>コーティング自らが塗装の代わりに劣化することで、塗装を守ります。
+                            </p>
+                            <br><br>
+                            <img src="./assets/img/home/sec-04/car.png" alt="car" class="block mx-auto max-w-full"
+                                width="379" height="253">
+                            <br>
+                        </div>
                         <p
-                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 font-bold text-[18px] text-center">
+                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 font-bold text-[18px] text-center cur slideToggle">
                             「コーティング」施工車なら買取査定価格もアップ！
                         </p>
-                        <br>
-                        <p>
-                            コーティングを車に施工することによって、紫外線や酸性雨から車の塗装を守ります。<br>
-                            また、走行中の空気やホコリ、洗車での摩擦による塗装の劣化も防ぎます。<br>
-                            コーティングをして5年走った車とコーティングをしていない車では、外観に大きな違いが出てくるのです。 よって、お車の買取査定価格が高くなるのも当然と言えます。<br>
-                            コーティングはまさに「車のアンチエイジング」なのです。
-                        </p>
-                        <img src="./assets/img/home/sec-04/car-head.png" alt="car" class="block mx-auto max-w-full"
-                            width="415" height="143">
+                        
+                        <div class="slideToggleTarget">
+                            <p>
+                                コーティングを車に施工することによって、紫外線や酸性雨から車の塗装を守ります。<br>
+                                また、走行中の空気やホコリ、洗車での摩擦による塗装の劣化も防ぎます。<br>
+                                コーティングをして5年走った車とコーティングをしていない車では、外観に大きな違いが出てくるのです。 よって、お車の買取査定価格が高くなるのも当然と言えます。<br>
+                                コーティングはまさに「車のアンチエイジング」なのです。
+                            </p>
+                            <img src="./assets/img/home/sec-04/car-head.png" alt="car" class="block mx-auto max-w-full"
+                                width="415" height="143">
+                        </div>
                         <a href="javascript:;"
                             class="block bg-blue mx-auto py-4 w-full font-black text-[24px] text-center text-white toggle-image">
                             エコダイヤキーパーが人気なワケ！
@@ -827,39 +847,39 @@
                             </div>
                         </div>
                         <br>
-                        <p
-                            class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 font-bold text-[18px] text-center">
-                            細密研磨
-                        </p><br>
-                        <div class="gap-x-4 gap-y-4 grid grid-cols-2">
-                            <div>
-                                <p>
+                            <p
+                                class="border-[#000] bg-[#EFEFEF] mx-auto my-4 px-[36px] py-[22px] border-t-2 border-b-2 font-bold text-[18px] text-center cursor-pointer slideToggle">
+                                細密研磨
+                            </p>
+                            <div class="gap-x-4 gap-y-4 grid grid-cols-2 slideToggleTarget" style="display: none;">
+                                <div>
+                                    <p>
 
-                                    キズのエッジ部分だけを磨き取る研磨。<br>
-                                    塗装本来の輝きを取り戻す。塗装の厚みは変わらない。
-                                </p>
-                                <img src="./assets/img/home/sec-04/img-later.png" alt="img-later"
-                                    class="block mx-auto w-full">
+                                        キズのエッジ部分だけを磨き取る研磨。<br>
+                                        塗装本来の輝きを取り戻す。塗装の厚みは変わらない。
+                                    </p>
+                                    <img src="./assets/img/home/sec-04/img-later.png" alt="img-later"
+                                        class="block mx-auto w-full">
 
+                                </div>
+                                <div>
+                                    <p class="border-[#000] mb-2 border-b font-bold text-[24px] text-center">
+                                        施工価格
+                                    </p><br>
+                                    <p class="bg-[#EEF0EE] p-8 text-[16px]">
+                                        SSサイズ（ミラ、ワゴンR、ムーヴなど）<br>
+                                        ¥18,060 <br>
+                                        Sサイズ（アクア、フィット、ノートなど）<br>
+                                        ¥19,960 <br>
+                                        Mサイズ（プリウス、インサイト、キューブなど）<br>
+                                        ¥21,600 <br>
+                                        Lサイズ（クラウン、アコード、レガシィなど）<br>
+                                        ¥22,800 <br>
+                                        LLサイズ（アルファード、ステップワゴン、セレナなど）<br>
+                                        ¥25,200
+                                    </p>
+                                </div>
                             </div>
-                            <div>
-                                <p class="border-[#000] mb-2 border-b font-bold text-[24px] text-center">
-                                    施工価格
-                                </p><br>
-                                <p class="bg-[#EEF0EE] p-8 text-[16px]">
-                                    SSサイズ（ミラ、ワゴンR、ムーヴなど）<br>
-                                    ¥18,060 <br>
-                                    Sサイズ（アクア、フィット、ノートなど）<br>
-                                    ¥19,960 <br>
-                                    Mサイズ（プリウス、インサイト、キューブなど）<br>
-                                    ¥21,600 <br>
-                                    Lサイズ（クラウン、アコード、レガシィなど）<br>
-                                    ¥22,800 <br>
-                                    LLサイズ（アルファード、ステップワゴン、セレナなど）<br>
-                                    ¥25,200
-                                </p>
-                            </div>
-                        </div>
                         <a href="javascript:;"
                             class="block bg-green mx-auto py-4 w-[676px] font-black text-[20px] text-center text-white">
                             知多市の地域情報

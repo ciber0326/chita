@@ -16,12 +16,20 @@
 <body>
     <header class="pt-3.5">
         <div class="h-container">
-            <a href="javascript:;" aria-label="site-logo">
-                <img src="./assets/img/logo.png" alt="logo" class="block mb-5" width="406" height="113">
-            </a>
+            <!-- <a href="javascript:;" aria-label="site-logo">
+                <img src="./assets/img/logo.png" alt="logo" class="block mb-5" width="316">
+            </a> -->
             <nav class="flex flex-wrap justify-between items-center mb-4">
+                <a href="javascript:;" aria-label="site-logo">
+                    <img src="./assets/img/logo.png" alt="logo" class="block mb-5" width="316">
+                </a>
                 <a class="inquiry-btn" href="#ex1" rel="modal:open">
                     電話番号・営業時間・アクセス
+                </a>
+                
+                <a href="javascript:;" aria-label="inquiry" class="flex items-center gap-x-1 font-bold">
+                    <img src="./assets/img/book.png" alt="book-img" width="33" height="27">
+                    スクールへのお問い合わせ
                 </a>
                 <div aria-label="social" class="flex gap-x-4">
                     <a href="javascript:;" aria-label="facebook-link">
@@ -31,33 +39,41 @@
                         <img src="./assets/img/instagram.png" alt="instagram-icon" width="30" height="30">
                     </a>
                 </div>
-                <a href="javascript:;" aria-label="inquiry" class="flex items-center gap-x-1 font-bold">
-                    <img src="./assets/img/book.png" alt="book-img" width="33" height="27">
-                    スクールへのお問い合わせ
-                </a>
-                <a href="tel+:0800-812-7809" class="font-bold text-[30px]">0800-812-7809</a>
+                <!-- <a href="tel+:0800-812-7809" class="font-bold text-[30px]">0800-812-7809</a>
                 <a href="javascript:;" class="reservation-btn">
                     ご予約は<br>
                     コチラ！
-                </a>
+                </a> -->
             </nav>
 
         </div>
-        <nav class="bg-blue text-18">
-            <div class="h-container">
-                <div class="flex justify-between items-center px-10 py-4 font-black text-white">
-                    <a href="./index.html">ホーム</a>
-                    <a href="./price.html">料金・割引・特典</a>
-                    <a href="./map.html">地図・店舗紹介</a>
-                    <a href="./reservation.html">ご予約・お問い合わせ</a>
-                    <a href="./voice.html">お客様の声・Q&A</a>
-                    <a href="./construction.html">施工事例</a>
-                    <a href="./column.html">コラム</a>
-                </div>
-            </div>
-        </nav>
+       
 
     </header>
+    
+    <nav class="top-0 left-0 z-[99999] sticky bg-blue w-full text-[16px]">
+        <div class="h-container">
+            <div class="flex justify-between items-center px-10 py-4 font-black text-white">
+                <a href="./index.html">ホーム</a>
+                <a href="./price.html">料金・割引・特典</a>
+                <a href="./map.html">地図・店舗紹介</a>
+                <a href="./reservation.html">ご予約・お問い合わせ</a>
+                <a href="./voice.html">お客様の声・Q&A</a>
+                <a href="./construction.html">施工事例</a>
+                <a href="./column.html">コラム</a>
+            </div>
+        </div>
+        <nav class="sticky-nav">
+            <a href="javascript:;">
+                ご予約は<br>
+                コチラ！
+            </a>
+            <a href="tel+:0800-812-7809">
+                0800-812<br>
+                -7809
+            </a>
+        </nav>
+    </nav>
     <div id="ex1" class="p-0 w-full modal">
         <div class="bg-blue py-4 font-bold text-[24px] text-center text-white">
             電話番号・営業時間・アクセス
@@ -92,7 +108,7 @@
                         リニューアルオープン準備中
                     </p>
                 </a>
-                   
+
                 <div class="window">
                     <p class="title">2025年4月リニューアルオープン予定<br>
                         -新舞子店で施工完了後のお問合せ-
@@ -182,8 +198,8 @@
                 <p class="font-bold text-[18px] text-red">
 
                     ご自身のお車のサイズが分からない方は、下記リンクをご確認下さい。
-                </p><br>
-                <a href="javascript:;" class="my-8 yellow-gradient-btn">
+                </p>
+                <a href="javascript:;" class="my-4 yellow-gradient-btn">
                     その他のお車のサイズを知りたい方はコチラ ＞＞
                 </a>
 
@@ -193,13 +209,13 @@
             <div class="s-container">
                 <ul class="price-list">
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -353,7 +369,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -399,13 +415,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -559,7 +575,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -605,13 +621,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -765,7 +781,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -811,13 +827,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -971,7 +987,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -1017,13 +1033,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -1177,7 +1193,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -1223,13 +1239,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -1383,7 +1399,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -1429,13 +1445,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -1589,7 +1605,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -1635,13 +1651,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -1795,7 +1811,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">
@@ -1841,13 +1857,13 @@
 
                     </li>
                     <li class="price-item">
-                        <div class="flex items-center gap-x-4 mb-[92px]">
+                        <div class="flex items-center gap-x-4 mb-[20px]">
                             <img src="./assets/img/price/banner-01.png" alt="banner-img"
                                 class="w-full max-w-[unset] lg:max-w-[70%]">
                             <div class="font-bold">
                                 <p class="leading-loose">
                                     桁違いのツヤ・厚さ・撥水の最新被膜であるEXキーパーをお車の細部まで施工。2年に1回のメンテで6年耐久。
-                                </p><br>
+                                </p>
                                 <p class="text-thick-red">
                                     SSサイズ<span class="text-[1.6em]">￥161,690～！</span>
                                 </p>
@@ -2001,7 +2017,7 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <a href="javascript:;" class="inline-block bg-yellow my-12 px-8 py-4 font-bold text-[20px]">
+                            <a href="javascript:;" class="inline-block bg-yellow my-6 px-8 py-4 font-bold text-[20px]">
                                 サイズごとの車種例はこちら
                             </a>
                             <div class="table-wrapper">

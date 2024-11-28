@@ -100,6 +100,31 @@
   .modal-body .window .content {
     @apply px-6 py-4;
   }
+  .blocker {
+    z-index: 999999999999999999999999 !important;
+  }
+  .sticky-nav {
+    @apply w-fit right-0 absolute top-full z-[99999];
+  }
+  .sticky-nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .sticky-nav a:first-child {
+    background-color: var(--clr-green);
+    color: #fff;
+    padding: 10px 10px;
+    @apply hover:bg-white hover:text-green;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid var(--clr-green);
+  }
+  .sticky-nav a:last-child {
+    @apply bg-blue text-white text-[18px] font-bold px-4 py-2 flex;
+    @apply hover:bg-white hover:text-blue;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
+  }
   /* ---------------------------------------------header */
 
   .inquiry-btn {
@@ -210,15 +235,22 @@
   }
   /* ------------------------------------price page */
   /* -- -- price accordion */
+  ul li.price-item:not(:last-child){
+    @apply mb-[155px];
+  }
+  .price-item{
+    
+  }
   .price-header {
     position: relative;
-    @apply bg-red cursor-pointer font-bold text-white text-center py-[20px] text-[18px] leading-loose;
+    @apply bg-red cursor-pointer font-bold text-white text-center py-[16px] text-[18px] leading-loose;
   }
   .price-header [alt='arrow-top'] {
     @apply top-1/2 right-[30px] absolute;
-    transform: translateY(-50%);
+    
     transform-origin: center center;
     transition: transform 0.3s ease;
+    top: 33px;
   }
   /* -- -- .tbl_price */
   .table-wrapper {
@@ -227,8 +259,8 @@
   .tbl_price {
     width: 100%;
     min-width: 770px;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 20px;
+    /* margin-bottom: 20px; */
   }
   .tbl_price,
   .tbl_price tr,
@@ -252,7 +284,7 @@
     @apply block mx-auto mt-4;
   }
   .tbl_price_menu {
-    @apply w-full min-w-[770px] my-8;
+    @apply w-full min-w-[770px] mb-14;
   }
   .tbl_price_menu,
   .tbl_price_menu tr,

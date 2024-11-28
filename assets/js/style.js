@@ -136,4 +136,7 @@ $('.faq-header').click(function () {
         $faqItem.find('.header-icon div:last-child').css('visibility', 'visible'); // Show plus
     }
 });
+$('.slideToggle').on('click', function(){
+  $(this).next('.slideToggleTarget').slideToggle();
+})
 })
