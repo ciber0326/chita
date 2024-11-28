@@ -73,7 +73,7 @@
     );
   }
   .page-nav nav > a {
-    @apply flex justify-between items-center px-[40px] py-[20px] rounded-lg  w-[275px] font-black text-[18px] text-white overflow-hidden;
+    @apply flex justify-between items-center px-[36px] py-[16px] rounded-lg  w-[275px] font-black text-[16px] text-white overflow-hidden;
   }
   .yellow-gradient-btn {
     @apply py-[20px] w-full block text-red text-[22px] text-center font-black;
@@ -420,10 +420,10 @@
     @apply grid grid-cols-2;
   }
   .tab-header li {
-    @apply cursor-pointer text-center px-4 py-4 border-b-2  hover:text-light-blue hover:border-lgt-green text-lgt-green rounded-tl-lg rounded-tr-lg;
+    @apply bg-[#F2F8F9] cursor-pointer text-center px-4 py-4 border-b-2  hover:text-light-blue hover:border-lgt-green text-lgt-green rounded-tl-lg rounded-tr-lg;
   }
   .tab-header li.active {
-    @apply text-light-blue border-light-blue border-t-2 border-b-0 border-l-2 border-r-2 rounded-tl-lg rounded-tr-lg;
+    @apply bg-white text-light-blue border-light-blue border-t-2 border-b-0 border-l-2 border-r-2 rounded-tl-lg rounded-tr-lg;
   }
   .tab-body > li {
     @apply hidden;
@@ -431,6 +431,13 @@
   .tab-body > li.active {
     @apply !grid;
     @apply grid-cols-2 gap-x-4 gap-y-4;
+  }
+  .tab-body > li:last-child {
+    @apply !block;
+  }
+  .tab-body > li:last-child .tab-content {
+    width: 50%;
+    margin: 0 auto;
   }
   .tab-content {
     @apply rounded-[30px] overflow-hidden border-2 border-lgt-green;
@@ -509,8 +516,8 @@
   }
   .const-sec h3::after {
     content: '';
-    @apply h-full w-[4px] bg-lgt-green;
-    @apply absolute left-0 top-0;
+    @apply h-[80%] w-[10px] bg-lgt-green;
+    @apply absolute left-0 top-1/2 -translate-y-1/2;
   }
   .const-table-list li:not(:last-child) {
     @apply mb-[20px];
