@@ -1401,11 +1401,11 @@ div:has(> .cta-btn-list) {
 }
 
 .cta-btn-list {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* @apply grid grid-cols-2; */
 }
 
 .cta-btn-list a.cta-btn-item {
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;

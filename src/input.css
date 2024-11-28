@@ -307,9 +307,10 @@
     box-shadow: 1px 1px 4px #cccccc;
   }
 .cta-btn-list {
-  @apply grid grid-cols-2;
+  /* @apply grid grid-cols-2; */
 }
   .cta-btn-list a.cta-btn-item {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
