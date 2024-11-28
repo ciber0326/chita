@@ -327,6 +327,13 @@
  
 
   /* -- -- map item */
+  [alt="news_res"] {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  ul li.map-item:not(:last-child) {
+    margin-bottom: 70px;
+  }
   .map-item h3 {
     --clr-lgt-green: #44b5c6;
     -webkit-text-fill-color: #fff;
@@ -342,6 +349,13 @@
     content: '';
     z-index: -1;
     @apply absolute left-0 right-0 h-full top-1/2 bg-lgt-green;
+  }
+  ul li.map-sub-item:not(:last-child) {
+    margin-bottom: 48px;
+  }
+  ul li.map-sub-item iframe {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   table.map-table,
   table.map-table tr,
