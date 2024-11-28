@@ -236,7 +236,7 @@
   /* ------------------------------------price page */
   /* -- -- price accordion */
   ul li.price-item:not(:last-child){
-    @apply mb-[155px];
+    @apply mb-[70px];
   }
   .price-item{
     

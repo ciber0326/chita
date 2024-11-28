@@ -1289,7 +1289,7 @@ footer nav {
 /* -- -- price accordion */
 
 ul li.price-item:not(:last-child) {
-  margin-bottom: 155px;
+  margin-bottom: 70px;
 }
 
 .price-item{
