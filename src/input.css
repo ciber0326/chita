@@ -43,10 +43,11 @@
   }
 
   .swiper-prev {
-    @apply left-0;
+    @apply left-0 md:translate-x-0 !-translate-x-[4px];
   }
   .swiper-next {
-    @apply right-0;
+    @apply right-0 md:translate-x-0 !translate-x-[4px];
+
   }
 
   .swiper-pagination-bullet[aria-label='bullet'] {
@@ -232,7 +233,7 @@
   /* ---------------------------------------------header */
 
   .inquiry-btn {
-    @apply bg-blue px-8 py-2 rounded-md font-bold text-[18px] text-white cursor-pointer;
+    @apply bg-blue w-full md:w-fit text-center px-8 py-2 rounded-md font-bold text-[18px] text-white cursor-pointer;
     @apply hover:opacity-70 transition-opacity duration-700;
   }
   .reservation-btn {

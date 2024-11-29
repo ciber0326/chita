@@ -21,9 +21,30 @@ $(document).ready(function () {
     autoplay: {
       delay: 3000,
       disableOnInteraction: false
+    },
+    breakpoints: {
+      // when window width is >= 320px
+      340: {
+        slidesPerView: 1.2,
+        spaceBetween: 20,
+      },
+      768: {
+        slidesPerView: 1.6,
+        spaceBetween: 30
+      },
+      // when window width is >= 480px
+      1024: {
+        slidesPerView: 2,
+        spaceBetween: 16
+      },
+      // when window width is >= 640px
+      1280: {
+        slidesPerView: 2.5,
+        spaceBetween: 20
+      }
     }
   })
-  var topSec01Slider = new Swiper('#topSec03Slider', {
+  var topSec02Slider = new Swiper('#topSec03Slider', {
     slidesPerView: 2.5, // Show 4 slides
     spaceBetween: 20, // Space between slides in pixels
     loop: true, // Enable looping
