@@ -247,7 +247,7 @@
 
   /* ---------------------------------------------footer */
   footer {
-    @apply bg-black text-white pt-[64px] pb-[32px];
+    @apply bg-black text-white pt-[64px] pb-[120px] lg:pb-[32px];
   }
   footer nav {
     display: grid;

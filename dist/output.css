@@ -1257,9 +1257,15 @@ footer {
   --tw-bg-opacity: 1;
   background-color: rgb(51 51 51 / var(--tw-bg-opacity));
   padding-top: 64px;
-  padding-bottom: 32px;
+  padding-bottom: 120px;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding-bottom: 32px;
+  }
 }
 
 footer nav {
@@ -2945,12 +2951,12 @@ table.map-table tr th:first-child,
   padding-bottom: 3rem;
 }
 
-.ps-8 {
-  padding-inline-start: 2rem;
+.ps-0 {
+  padding-inline-start: 0px;
 }
 
-.ps-\[24px\] {
-  padding-inline-start: 24px;
+.ps-8 {
+  padding-inline-start: 2rem;
 }
 
 .pt-2 {
@@ -2959,10 +2965,6 @@ table.map-table tr th:first-child,
 
 .pt-3\.5 {
   padding-top: 0.875rem;
-}
-
-.ps-0 {
-  padding-inline-start: 0px;
 }
 
 .text-center {
@@ -3118,12 +3120,12 @@ table.map-table tr th:first-child,
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .sm\:ps-\[calc\(40\%\+32px\)\] {
-    padding-inline-start: calc(40% + 32px);
-  }
-
   .sm\:ps-\[24px\] {
     padding-inline-start: 24px;
+  }
+
+  .sm\:ps-\[calc\(40\%\+32px\)\] {
+    padding-inline-start: calc(40% + 32px);
   }
 
   .sm\:text-\[16px\] {
