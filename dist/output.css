@@ -2381,6 +2381,10 @@ table.map-table tr th:first-child,
   transition: all 0.3s ease-in-out;
 }
 
+.slideToggleTarget {
+  display: none;
+}
+
 .absolute {
   position: absolute;
 }

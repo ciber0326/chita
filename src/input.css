@@ -775,4 +775,9 @@
     @apply hover:text-white hover:bg-black;
     transition: all 0.3s ease-in-out;
   }
+  .slideToggleTarget {
+    display: none;
+  }
+
+  
 }
