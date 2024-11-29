@@ -68,7 +68,7 @@ $(document).ready(function () {
     breakpoints: {
       // when window width is >= 320px
       340: {
-        slidesPerView: 1.2,
+        slidesPerView: 1,
         spaceBetween: 20,
       },
       768: {

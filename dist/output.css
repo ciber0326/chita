@@ -1413,10 +1413,19 @@ footer nav a {
   --tw-bg-opacity: 1;
   background-color: rgb(0 52 154 / var(--tw-bg-opacity));
   text-align: center;
-  font-size: 22px;
+  font-size: 16px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .sec-04-lists li h5.title {
+    font-size: 22px;
+  }
+}
+
+.sec-04-lists li h5.title {
   margin-bottom: 2rem;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1433,7 +1442,7 @@ footer nav a {
   border-style: dotted;
   padding-bottom: 1rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   line-height: 2;
 }
@@ -1726,13 +1735,21 @@ table.map-table tr th:first-child,
   margin-top: 24px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 52 154 / var(--tw-bg-opacity));
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-align: center;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .intro-title {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 20px;
+  }
 }
 
 .intro-tbl {
@@ -1791,16 +1808,31 @@ table.map-table tr th:first-child,
 .accordion-header [alt='arrow-top-icon'] {
   position: absolute;
   right: 0.75rem;
-  top: 50%;
-  --tw-translate-y: -50%;
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  top: 20px;
 }
 
 .accordion-body {
-  padding-left: 46px;
-  padding-right: 46px;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .accordion-body {
+    padding-left: 46px;
+    padding-right: 46px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+.accordion-body img {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .accordion-body img {
+    width: -moz-fit-content;
+    width: fit-content;
+  }
 }
 
 .accordion-body li:not(:last-child) {
@@ -2473,16 +2505,12 @@ table.map-table tr th:first-child,
   margin-bottom: 2rem;
 }
 
-.mb-\[124px\] {
-  margin-bottom: 124px;
-}
-
 .mb-\[12px\] {
   margin-bottom: 12px;
 }
 
-.mb-\[158px\] {
-  margin-bottom: 158px;
+.mb-\[16px\] {
+  margin-bottom: 16px;
 }
 
 .mb-\[20px\] {
@@ -2495,6 +2523,10 @@ table.map-table tr th:first-child,
 
 .mb-\[38px\] {
   margin-bottom: 38px;
+}
+
+.mb-\[40px\] {
+  margin-bottom: 40px;
 }
 
 .ml-auto {
@@ -2644,14 +2676,6 @@ table.map-table tr th:first-child,
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-\[180px_minmax\(0\2c 1fr\)\] {
-  grid-template-columns: 180px minmax(0,1fr);
 }
 
 .grid-cols-\[35\%_minmax\(0\2c 1fr\)\] {
@@ -2910,11 +2934,6 @@ table.map-table tr th:first-child,
   padding-bottom: 0.5rem;
 }
 
-.py-20 {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-}
-
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -2933,11 +2952,6 @@ table.map-table tr th:first-child,
 .py-\[10px\] {
   padding-top: 10px;
   padding-bottom: 10px;
-}
-
-.py-\[22px\] {
-  padding-top: 22px;
-  padding-bottom: 22px;
 }
 
 .py-\[24px\] {
@@ -3120,8 +3134,26 @@ table.map-table tr th:first-child,
 }
 
 @media (min-width: 640px) {
+  .sm\:inline-block {
+    display: inline-block;
+  }
+
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .sm\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .sm\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .sm\:py-\[22px\] {
+    padding-top: 22px;
+    padding-bottom: 22px;
   }
 
   .sm\:ps-\[24px\] {
@@ -3150,8 +3182,16 @@ table.map-table tr th:first-child,
     order: 0;
   }
 
+  .md\:mb-\[124px\] {
+    margin-bottom: 124px;
+  }
+
   .md\:mb-\[90px\] {
     margin-bottom: 90px;
+  }
+
+  .md\:block {
+    display: block;
   }
 
   .md\:grid-cols-2 {
@@ -3160,6 +3200,10 @@ table.map-table tr th:first-child,
 
   .md\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-\[180px_minmax\(0\2c 1fr\)\] {
+    grid-template-columns: 180px minmax(0,1fr);
   }
 
   .md\:grid-cols-\[calc\(200\%\/3\)_minmax\(0\2c 1fr\)\] {
@@ -3174,6 +3218,16 @@ table.map-table tr th:first-child,
     padding: 72px;
   }
 
+  .md\:py-20 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+
+  .md\:py-\[22px\] {
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
   .md\:text-\[24px\] {
     font-size: 24px;
   }
@@ -3184,6 +3238,10 @@ table.map-table tr th:first-child,
 }
 
 @media (min-width: 1024px) {
+  .lg\:mb-\[158px\] {
+    margin-bottom: 158px;
+  }
+
   .lg\:block {
     display: block;
   }

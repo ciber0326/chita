@@ -308,14 +308,14 @@
     @apply my-8;
   }
   .sec-04-lists li h5.title {
-    @apply bg-blue text-white rounded-lg text-[22px] font-bold text-center;
+    @apply bg-blue text-white rounded-lg text-[16px] sm:text-[22px] font-bold text-center;
     @apply py-2 mb-8;
   }
   .sec-04-lists li h5.title span {
     @apply text-yellow text-[0.8em];
   }
   .sec-04-lists li .short-desc {
-    @apply text-[20px] text-center font-bold border-b-4 border-dotted pb-4 leading-loose;
+    @apply text-[18px] text-center font-bold border-b-4 border-dotted pb-4 leading-loose;
   }
   /* .sec-04-lists li p:not(.short-desc) {
     font-size: 24px;
@@ -488,7 +488,7 @@
   }
   /* -- --- intro */
   .intro-title {
-    @apply bg-blue text-white py-8 text-center text-[20px] font-bold mt-[24px];
+    @apply bg-blue text-white py-4 sm:py-8 text-center text-[16px] sm:text-[20px] font-bold mt-[24px];
   }
   .intro-tbl {
     width: 100%;
@@ -522,10 +522,13 @@
     @apply relative cursor-pointer bg-mid-blue text-white text-center py-4 font-bold;
   }
   .accordion-header [alt='arrow-top-icon'] {
-    @apply absolute right-3 top-1/2 -translate-y-1/2;
+    @apply absolute right-3 top-[20px];
   }
   .accordion-body {
-    @apply px-[46px] py-[24px];
+    @apply p-[10px] md:px-[46px] md:py-[24px];
+  }
+  .accordion-body img {
+    @apply w-full md:w-fit;
   }
   .accordion-body li:not(:last-child) {
     @apply mb-8;
