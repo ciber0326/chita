@@ -564,7 +564,7 @@ video {
 
 body {
   letter-spacing: 0.008em;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
   line-height: 1.8;
 }
 
@@ -930,10 +930,6 @@ body {
     );
 }
 
-#ex1 {
-  max-width: 1200px !important;
-}
-
 .modal-body {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -964,6 +960,55 @@ body {
   padding-right: 1.5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+/* ----------------------------modal------------------- */
+
+.modal-container {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Grey background */
+  z-index: 9999999;
+}
+
+.modal-wrapper {
+  background-color: #fff;
+  /* White background for the modal content */
+  border-radius: 10px;
+  width: 80%;
+  /* Adjust the modal width */
+  max-width: 1024px;
+  padding: 20px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 30px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #000;
+  border-radius: 50%;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  transform: translate(20%, -20%)
 }
 
 .sticky-nav {
@@ -1292,7 +1337,7 @@ ul li.price-item:not(:last-child) {
   margin-bottom: 70px;
 }
 
-.price-item{
+.price-item {
 }
 
 .price-header {
@@ -1433,7 +1478,7 @@ div:has(> .cta-btn-list) {
 
 /* -- -- map item */
 
-[alt="news_res"] {
+[alt='news_res'] {
   width: 100%;
   margin-bottom: 20px;
 }
@@ -1989,7 +2034,7 @@ table.map-table tr th:first-child,
   color: rgb(253 241 80 / var(--tw-text-opacity));
 }
 
-.ranking-list-wrapper h5+p {
+.ranking-list-wrapper h5 + p {
   text-align: center;
   margin-bottom: 16px;
 }
@@ -2014,7 +2059,7 @@ table.map-table tr th:first-child,
   width: 26px;
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  background-image: url("../assets/img/column/favorite-number-first.png");
+  background-image: url('../assets/img/column/favorite-number-first.png');
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -2029,7 +2074,7 @@ table.map-table tr th:first-child,
   width: 26px;
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  background-image: url("../assets/img/column/favourite-number-second.png");
+  background-image: url('../assets/img/column/favourite-number-second.png');
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -2044,7 +2089,7 @@ table.map-table tr th:first-child,
   width: 26px;
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  background-image: url("../assets/img/column/favourite-number-third.png");
+  background-image: url('../assets/img/column/favourite-number-third.png');
   background-position: center center;
   background-size: 100% 100%;
   background-repeat: no-repeat;

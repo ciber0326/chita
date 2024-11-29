@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  $(".toggle-image").on("click", function(e) {
-    e.preventDefault(); // Prevent default anchor behavior
-    $(".toggle-target").slideToggle(); // Toggle the image visibility with animation
-});
+  $('.toggle-image').on('click', function (e) {
+    e.preventDefault() // Prevent default anchor behavior
+    $('.toggle-target').slideToggle() // Toggle the image visibility with animation
+  })
   var topSec01Slider = new Swiper('#topSec01Slider', {
     slidesPerView: 3, // Show 4 slides
     spaceBetween: 20, // Space between slides in pixels
@@ -27,7 +27,7 @@ $(document).ready(function () {
     slidesPerView: 2.5, // Show 4 slides
     spaceBetween: 20, // Space between slides in pixels
     loop: true, // Enable looping
-    
+
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
@@ -108,35 +108,67 @@ $(document).ready(function () {
     })
   })
 
-// Initialize: Hide all FAQ bodies except the first
-$('.faq-body').hide();
-$('.faq-item:first-child .faq-body').show(); // Show the first FAQ body
+  // Initialize: Hide all FAQ bodies except the first
+  $('.faq-body').hide()
+  $('.faq-item:first-child .faq-body').show() // Show the first FAQ body
 
-$('.faq-item:first-child .header-icon div:first-child').css('visibility', 'hidden'); // Hide horizontal line (minus)
+  $('.faq-item:first-child .header-icon div:first-child').css(
+    'visibility',
+    'hidden'
+  ) // Hide horizontal line (minus)
 
-// Handle FAQ header click
-$('.faq-header').click(function () {
-    const $faqItem = $(this).closest('.faq-item'); // Get the clicked FAQ item
-    const $faqBody = $faqItem.find('.faq-body'); // Find the corresponding FAQ body
+  // Handle FAQ header click
+  $('.faq-header').click(function () {
+    const $faqItem = $(this).closest('.faq-item') // Get the clicked FAQ item
+    const $faqBody = $faqItem.find('.faq-body') // Find the corresponding FAQ body
 
     // If the clicked FAQ body is already visible
     if ($faqBody.is(':visible')) {
-        $faqBody.slideUp(300); // Hide the body
-        
-        $faqItem.find('.header-icon div:last-child').css('visibility', 'hidden'); // Hide vertical line (plus)
-    } else {
-        // Hide all FAQ bodies and reset icons
-        $('.faq-body').slideUp(300);
-        
-        $('.header-icon div:last-child').css('visibility', 'hidden'); // Hide plus globally
+      $faqBody.slideUp(300) // Hide the body
 
-        // Show the clicked FAQ body and adjust icons
-        $faqBody.slideDown(300); // Show the body
-        
-        $faqItem.find('.header-icon div:last-child').css('visibility', 'visible'); // Show plus
+      $faqItem.find('.header-icon div:last-child').css('visibility', 'hidden') // Hide vertical line (plus)
+    } else {
+      // Hide all FAQ bodies and reset icons
+      $('.faq-body').slideUp(300)
+
+      $('.header-icon div:last-child').css('visibility', 'hidden') // Hide plus globally
+
+      // Show the clicked FAQ body and adjust icons
+      $faqBody.slideDown(300) // Show the body
+
+      $faqItem.find('.header-icon div:last-child').css('visibility', 'visible') // Show plus
     }
-});
-$('.slideToggle').on('click', function(){
-  $(this).next('.slideToggleTarget').slideToggle();
-})
+  })
+  $('.slideToggle').on('click', function () {
+    $(this).next('.slideToggleTarget').slideToggle()
+  })
+
+  //-----------------------Modal Behaviour--------------------
+
+  // Open modal (triggered by clicking any link or button to open modal)
+  $('.open-modal').on('click', function (event) {
+    event.preventDefault()
+
+    // Disable body scroll when modal is open
+    $('body').css('overflow', 'hidden')
+    $('.modal-container').fadeIn(500) // Fade in the modal (500ms)
+  })
+
+  // Close modal (triggered by clicking the close button or outside the modal)
+  $('.modal-close').on('click', function (event) {
+    event.preventDefault()
+
+    // Restore body scroll when modal is closed
+    $('body').css('overflow', 'unset')
+    $('.modal-container').fadeOut(500) // Fade out the modal (500ms)
+  })
+
+  // Close the modal when clicking outside the modal content
+  $('.modal-container').on('click', function (event) {
+    if ($(event.target).is('.modal-container')) {
+      // Restore body scroll when modal is closed
+      $('body').css('overflow', 'unset')
+      $('.modal-container').fadeOut(500) // Fade out if clicked outside the modal
+    }
+  })
 })
