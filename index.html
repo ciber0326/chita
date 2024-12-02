@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"> -->
+    <link rel="stylesheet" href="./swiper.min.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" /> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,14 +21,15 @@
 
             <nav class="flex flex-wrap justify-between items-center gap-4 md:gap-0 mb-4">
                 <a href="./index.html" aria-label="site-logo">
-                    <img src="./assets/img/logo.png" alt="logo" class="block mb-5" width="316">
+                    <img src="./assets/img/logo.png" alt="logo" class="block sm:mb-5 w-[200px] sm:w-[316px]"
+                        width="316">
                 </a>
                 <a class="inquiry-btn open-modal" href="javascript:;">
 
                     電話番号・営業時間・アクセス
                 </a>
 
-                <h1>知多・東海・大府で13920円のキーパーカーコーティング
+                <h1 class="sm:block hidden">知多・東海・大府で13920円のキーパーカーコーティング
                 </h1>
             </nav>
 
@@ -126,8 +128,7 @@
                             <a href="tel:0800-812-7809"
                                 class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
                                 <img src="./assets/img/phone.png" alt="phone-icon"
-                                    class="rounded-[50%] w-[40px] lg:w-[80px] h-auto lg:h-[80px]" width="80"
-                                    height="80">
+                                    class="rounded-[50%] w-[40px] lg:w-[80px] h-auto" width="80" height="80">
                                 0800-812-7809
                             </a><br class="hidden md:block">
                             営業時間: 8:00～19:00 (定休日：なし)
@@ -149,8 +150,7 @@
                             <a href="tel:0120-996-777"
                                 class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
                                 <img src="./assets/img/phone.png" alt="phone-icon"
-                                    class="rounded-[50%] w-[40px] lg:w-[80px] h-[40px] h-auto lg:h-[80px]" width="80"
-                                    height="80">
+                                    class="rounded-[50%] w-[40px] lg:w-[80px] h-auto" width="80" height="80">
                                 0120-996-777
                             </a><br class="hidden md:block">
                             営業時間: 9:00～19:00 (定休日：月曜 ※月曜祝日の場合は翌火曜)
@@ -171,14 +171,16 @@
 
     <main id="top">
         <section id="hero" class="relative">
-            <div class="px-0 o-container">
-                <img src="./assets/img/main-visual.png" alt="main-visual" class="w-full">
-            </div>
-            <img src="./assets/img/yello-block.png" alt="yellow-block" class="bottom-0 left-0 z-[-1] absolute w-full">
+
+            <img src="./assets/img/main-visual.png" alt="main-visual"
+                class="w-full sm:w-[calc(100%*1354/1920)] mx-auto">
+
+            <img src="./assets/img/yello-block.png" alt="yellow-block"
+                class="bottom-0 left-0 z-[-1] absolute aspect-[1352/105] sm:aspect-auto sm:w-full">
         </section>
         <section id="heroSlider" class="bg-blue py-7">
             <div class="o-container">
-                <div class="gap-x-4 gap-y-4 grid md:grid-cols-2 lg:grid-cols-4">
+                <div class="gap-x-2 gap-y-2 sm:gap-x-4 sm:gap-y-4 grid grid-cols-2 lg:grid-cols-4">
                     <img src="./assets/img/home/hero-slider-img-01.png" alt="hero-slider-img"
                         class="w-full aspect-[31/20]">
                     <img src="./assets/img/home/hero-slider-img-02.png" alt="hero-slider-img"
@@ -265,8 +267,8 @@
                             background-size: cover cover;
                             
                         " class="card-item group">
-                        <img src="./assets/img/home/sec-02/cards/Background-01.png" alt="card-icon" class="hidden sm:inline-block h-fit"
-                            width="60" height="60">
+                        <img src="./assets/img/home/sec-02/cards/Background-01.png" alt="card-icon"
+                            class="hidden sm:inline-block h-fit" width="60" height="60">
                         <div class="font-black text-white">
                             <p class="mb-4 text-[16px] sm:text-[20px] text-center">
                                 信頼の実績<br class="hidden md:block">
@@ -301,8 +303,8 @@
                             background-size: cover cover;
                             
                         " class="card-item group">
-                        <img src="./assets/img/home/sec-02/cards/Background-02.png" alt="card-icon" class="hidden sm:inline-block h-fit"
-                            width="60" height="60">
+                        <img src="./assets/img/home/sec-02/cards/Background-02.png" alt="card-icon"
+                            class="hidden sm:inline-block h-fit" width="60" height="60">
                         <div class="font-black text-white">
                             <p class="mb-4 text-[16px] sm:text-[20px] text-center">
                                 キーパー正規代理店<br class="hidden md:block">
@@ -337,8 +339,8 @@
                             background-size: cover cover;
                             
                         " class="card-item group">
-                        <img src="./assets/img/home/sec-02/cards/Background-03.png" alt="card-icon" class="hidden sm:inline-block h-fit"
-                            width="60" height="60">
+                        <img src="./assets/img/home/sec-02/cards/Background-03.png" alt="card-icon"
+                            class="hidden sm:inline-block h-fit" width="60" height="60">
                         <div class="font-black text-white">
                             <p class="mb-4 text-[16px] sm:text-[20px] text-center">
                                 他社圧倒の格安料金<br class="hidden md:block">
@@ -373,8 +375,8 @@
                             background-size: cover cover;
                             
                         " class="card-item group">
-                        <img src="./assets/img/home/sec-02/cards/Background-04.png" alt="card-icon" class="hidden sm:inline-block h-fit"
-                            width="60" height="60">
+                        <img src="./assets/img/home/sec-02/cards/Background-04.png" alt="card-icon"
+                            class="hidden sm:inline-block h-fit" width="60" height="60">
                         <div class="font-black text-white">
                             <p class="mb-4 text-[16px] sm:text-[20px] text-center">
                                 最短2時間施工<br class="hidden md:block">
@@ -409,8 +411,8 @@
                             background-size: cover cover;
                             
                         " class="card-item group">
-                        <img src="./assets/img/home/sec-02/cards/Background-05.png" alt="card-icon" class="hidden sm:inline-block h-fit"
-                            width="60" height="60">
+                        <img src="./assets/img/home/sec-02/cards/Background-05.png" alt="card-icon"
+                            class="hidden sm:inline-block h-fit" width="60" height="60">
                         <div class="font-black text-white">
                             <p class="mb-4 text-[16px] sm:text-[20px] text-center">
                                 お支払いはお客様の <br class="hidden md:block">
@@ -441,7 +443,8 @@
                 </div>
                 <div class="s-container">
 
-                    <img src="./assets/img/home/sec-02/google-banner.png" alt="google-banner" class="py-4 md:py-20 w-full">
+                    <img src="./assets/img/home/sec-02/google-banner.png" alt="google-banner"
+                        class="py-4 md:py-20 w-full">
                     <img src="./assets/img/home/sec-02/brown-banner-01.png" alt="google-banner"
                         class="mx-auto w-full max-w-[1176px]">
                     <img src="./assets/img/home/sec-02/brown-banner-02.png" alt="google-banner"
@@ -465,7 +468,7 @@
 
                     " class="mb-8 py-4 font-bold text-[24px] text-center">新着施工事例</h3>
 
-                    <div class="gap-x-4 gap-y-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+                    <div class="gap-x-4 gap-y-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                         <img src="./assets/img/home/sec-02/slider/slider-01.jpg" alt="sec-02-slider-img">
                         <img src="./assets/img/home/sec-02/slider/slider-02.jpg" alt="sec-02-slider-img">
                         <img src="./assets/img/home/sec-02/slider/slider-03.jpg" alt="sec-02-slider-img">
@@ -487,7 +490,7 @@
         </section>
         <section id="top-sec-03" class="relative bg-[#D9D9D9] py-[30px]">
             <img src="./assets/img/home/sec-03/title.png" alt="sec-03-title"
-                class="block mx-auto md:mb-[124px] mb-[40px] w-[1000px] max-w-full">
+                class="block mx-auto md:mb-[124px] mb-[24px] w-[1000px] max-w-full">
             <img src="./assets/img/home/sec-03/quote-left.png" alt="quote-left" width="292" height="310"
                 class="quote-img">
             <img src="./assets/img/home/sec-03/quote-right.png" alt="quote-right" width="292" height="310"
@@ -621,7 +624,8 @@
                         </p>
                         <br class="hidden md:block"><br class="hidden md:block">
                         <p>
-                            私達キーパープロショップは、新潟市エリア・鶴岡市エリアのカーコーティング専門店として、日本ダントツのカーコーティングブランド、キーパーの正規代理店として認定を受けております！<br class="hidden md:block">
+                            私達キーパープロショップは、新潟市エリア・鶴岡市エリアのカーコーティング専門店として、日本ダントツのカーコーティングブランド、キーパーの正規代理店として認定を受けております！<br
+                                class="hidden md:block">
                             プロ専用の設備、道具、材料とプロのカーコーティング技術で愛車をピカピカにします。
 
                         </p>
@@ -660,7 +664,7 @@
                             </span>オフ！
 
                         </p>
-                        <div class="bg-[#F2F2F2] mx-auto xl:mx-[-180px] p-8 w-fit max-w-full w">
+                        <div class="bg-[#F2F2F2] mx-auto xl:mx-[-180px] p-8 w-fit xl:max-w-full">
 
                             <div class="grid grid-cols-1 md:grid-cols-2 rounded-[30px] overflow-hidden">
 
@@ -688,7 +692,8 @@
                         </p>
                         <br class="hidden md:block"><br class="hidden md:block">
                         <p>
-                            当店で、コーティングを実施頂く際には、お車のボディの状態を一緒に確認しながら、ご予算・ご要望に応じて、 最適なキーパーコーティングをご提案いたします。<br class="hidden md:block">
+                            当店で、コーティングを実施頂く際には、お車のボディの状態を一緒に確認しながら、ご予算・ご要望に応じて、 最適なキーパーコーティングをご提案いたします。<br
+                                class="hidden md:block">
                             少しでも新潟市エリア・鶴岡市エリアのお客様に喜んでいただくために・・・私達は努力していきます！
 
                         </p>
@@ -778,7 +783,8 @@
                         </p>
                         <br class="hidden md:block"><br class="hidden md:block">
                         <p>
-                            より綺麗にコーティングを施工するためには作業環境が非常に重要です。<br class="hidden md:block">当店は専用の防塵コーティングブースを完備しており、細かい埃や日光を遮断した環境下で作業を実施いたします！また、
+                            より綺麗にコーティングを施工するためには作業環境が非常に重要です。<br
+                                class="hidden md:block">当店は専用の防塵コーティングブースを完備しており、細かい埃や日光を遮断した環境下で作業を実施いたします！また、
                             <span class="text-red">
 
                                 雨の日でもコーティング施工可能
@@ -837,8 +843,11 @@
                         <div class="slideToggleTarget">
                             <p>
                                 「コーティング」は、塗装保護の役割を果たします。<br class="hidden md:block">
-                                塗装の上に配置するコーティング被膜は、塗装の身代わりとなって紫外線・酸性雨・黄砂を含んだ雨を受け、大事な塗装の代わりに傷み汚れてくれます。<br class="hidden md:block">さらに、コーティングの利点は、塗装の代わりに傷んだコーティング被膜を、再施工やメンテナンスによって容易に入れ替えることが出来る点にもあります。<br class="hidden md:block">コーティング自らが塗装の代わりに劣化することで、塗装を守るのです！
-                                最も大切にすべきなのは、「新鮮な塗装」です。自らが身代わりになって塗装を守ることがコーティング本来の役割だからです。<br class="hidden md:block">コーティング自らが塗装の代わりに劣化することで、塗装を守ります。
+                                塗装の上に配置するコーティング被膜は、塗装の身代わりとなって紫外線・酸性雨・黄砂を含んだ雨を受け、大事な塗装の代わりに傷み汚れてくれます。<br
+                                    class="hidden md:block">さらに、コーティングの利点は、塗装の代わりに傷んだコーティング被膜を、再施工やメンテナンスによって容易に入れ替えることが出来る点にもあります。<br
+                                    class="hidden md:block">コーティング自らが塗装の代わりに劣化することで、塗装を守るのです！
+                                最も大切にすべきなのは、「新鮮な塗装」です。自らが身代わりになって塗装を守ることがコーティング本来の役割だからです。<br
+                                    class="hidden md:block">コーティング自らが塗装の代わりに劣化することで、塗装を守ります。
                             </p>
                             <br class="hidden md:block"><br class="hidden md:block">
                             <img src="./assets/img/home/sec-04/car.png" alt="car" class="block mx-auto max-w-full"
@@ -854,7 +863,8 @@
                             <p>
                                 コーティングを車に施工することによって、紫外線や酸性雨から車の塗装を守ります。<br class="hidden md:block">
                                 また、走行中の空気やホコリ、洗車での摩擦による塗装の劣化も防ぎます。<br class="hidden md:block">
-                                コーティングをして5年走った車とコーティングをしていない車では、外観に大きな違いが出てくるのです。 よって、お車の買取査定価格が高くなるのも当然と言えます。<br class="hidden md:block">
+                                コーティングをして5年走った車とコーティングをしていない車では、外観に大きな違いが出てくるのです。 よって、お車の買取査定価格が高くなるのも当然と言えます。<br
+                                    class="hidden md:block">
                                 コーティングはまさに「車のアンチエイジング」なのです。
                             </p>
                             <img src="./assets/img/home/sec-04/car-head.png" alt="car" class="block mx-auto max-w-full"
@@ -934,7 +944,8 @@
                         </p>
                         <p class="border-2 border-green p-[38px] rounded-lg leading-loose">
                             知多市は愛知県の自治体です。<br class="hidden md:block">
-                            知多市は愛知県の知多半島の北西部に位置する市で、市域の大半が標高20mから70mの丘陵であり、丘陵を刻む谷及び海岸に沿って、集落や市街地が発達しています。<br class="hidden md:block">
+                            知多市は愛知県の知多半島の北西部に位置する市で、市域の大半が標高20mから70mの丘陵であり、丘陵を刻む谷及び海岸に沿って、集落や市街地が発達しています。<br
+                                class="hidden md:block">
                             知多市のおすすめスポットは、「新舞子マリンパーク」です。<br class="hidden md:block">
                             新舞子マリンパークは、知多市緑浜町にある人口島の公園です。<br class="hidden md:block">
                             名古屋市内から最も近い海水浴場としても知られ、夏季はたくさんの海水浴客が訪れます。<br class="hidden md:block">
@@ -1005,10 +1016,12 @@
 
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script> -->
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/swiper.min.js"></script>
+
     <script src="./assets/js/style.js"></script>
 </body>
 

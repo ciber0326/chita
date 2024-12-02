@@ -39,7 +39,7 @@ $(document).ready(function () {
       },
       // when window width is >= 640px
       1280: {
-        slidesPerView: 2.5,
+        slidesPerView: 3,
         spaceBetween: 20
       }
     }

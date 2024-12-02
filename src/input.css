@@ -47,7 +47,6 @@
   }
   .swiper-next {
     @apply right-0 md:translate-x-0 !translate-x-[4px];
-
   }
 
   .swiper-pagination-bullet[aria-label='bullet'] {
@@ -143,8 +142,7 @@
     color: #ffffff;
     font-weight: bold;
     font-size: 16px;
-    transform: translate(20%, -20%)
-
+    transform: translate(20%, -20%);
   }
 
   .sticky-nav {
@@ -177,18 +175,18 @@
   }
   .sticky-nav a:last-child {
     @apply bg-blue text-white text-[18px] font-bold px-4 py-2 flex;
-    
+
     text-align: center;
     transition: all 0.3s ease-in-out;
-    border: 1px solid var(--clr-blue)
+    border: 1px solid var(--clr-blue);
   }
   .sticky-nav a:last-child:hover {
     @apply bg-white text-blue;
   }
-  .sticky-nav a:last-child:hover svg g{
+  .sticky-nav a:last-child:hover svg g {
     fill: var(--clr-blue);
   }
-/* bottom sticky nav */
+  /* bottom sticky nav */
   .bottom-sticky-nav {
     @apply w-full left-0 bottom-0 fixed z-[99999] grid grid-cols-2 lg:hidden;
   }
@@ -219,24 +217,24 @@
   }
   .bottom-sticky-nav a:last-child {
     @apply bg-blue text-white text-[18px] font-bold px-4 py-2 flex;
-    
+
     text-align: center;
     transition: all 0.3s ease-in-out;
-    border: 1px solid var(--clr-blue)
+    border: 1px solid var(--clr-blue);
   }
   .bottom-sticky-nav a:last-child:hover {
     @apply bg-white text-blue;
   }
-  .bottom-sticky-nav a:last-child:hover svg g{
+  .bottom-sticky-nav a:last-child:hover svg g {
     fill: var(--clr-blue);
   }
   /* ---------------------------------------------header */
 
   .inquiry-btn {
-    @apply bg-blue w-full md:w-fit text-center px-8 py-2 rounded-md font-bold text-[18px] text-white cursor-pointer;
+    @apply bg-blue text-center w-full sm:w-fit px-4 sm:px-8 py-2 rounded-md font-bold text-[14px] sm:text-[18px] text-white cursor-pointer;
     @apply hover:opacity-70 transition-opacity duration-700;
   }
-  .inquiry-btn+h1 {
+  .inquiry-btn + h1 {
     @apply md:text-[16px] text-[14px] text-center;
   }
   .reservation-btn {
@@ -254,13 +252,12 @@
     /* grid-template-columns: auto auto auto auto auto auto auto auto; */
     align-items: center;
     justify-content: space-between;
-    
+
     font-weight: bold;
     gap: 16px;
     @apply px-8 md:px-16 grid-cols-1 md:grid-cols-2 lg:grid-cols-[auto_auto_auto_auto_auto_auto_auto_auto];
   }
   footer nav a {
-    
   }
 
   /* -----------------------------------------------top */
@@ -413,7 +410,43 @@
     text-align: center;
     @apply py-[16px] px-[8px];
   }
+  .windows-header {
+    background-color: var(--clr-blue);
+    color: #ffffff;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+  }
+  .windows-wrapper {
+    border: 1px solid var(--clr-blue);
+    
+  }
+  .windows-wrapper .sub-title {
+    color: #ff8c00;
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+  .windows-wrapper .percent {
+    font-size: 60px;
+    color: red;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  .windows-body {
+    @apply p-4 sm:p-8;
+  }
+  .announcement {
+    padding: 8px 8px;
+    background-color: #FFFFCE;
+    border: 1px solid var(--clr-blue);
+}
+.announcement p:first-child {
+  font-size: 32px;
+  color: #F00;
+  text-shadow: 2px 2px 1px #FF0, -2px 2px 1px #FF0, 2px -2px 1px #FF0, -2px -2px 1px #FF0;
+}
 
+  
   /* -------------------------------------map page */
   div:has(> .cta-btn-list) {
     box-shadow: 1px 1px 4px #cccccc;
@@ -781,6 +814,4 @@
   .slideToggleTarget {
     display: none;
   }
-
-  
 }
