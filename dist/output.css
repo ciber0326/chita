@@ -3322,6 +3322,10 @@ table.map-table tr th:first-child,
     display: block;
   }
 
+  .md\:hidden {
+    display: none;
+  }
+
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
