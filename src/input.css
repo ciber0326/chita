@@ -419,7 +419,6 @@
   }
   .windows-wrapper {
     border: 1px solid var(--clr-blue);
-    
   }
   .windows-wrapper .sub-title {
     color: #ff8c00;
@@ -437,16 +436,16 @@
   }
   .announcement {
     padding: 8px 8px;
-    background-color: #FFFFCE;
+    background-color: #ffffce;
     border: 1px solid var(--clr-blue);
-}
-.announcement p:first-child {
-  font-size: 32px;
-  color: #F00;
-  text-shadow: 2px 2px 1px #FF0, -2px 2px 1px #FF0, 2px -2px 1px #FF0, -2px -2px 1px #FF0;
-}
+  }
+  .announcement p:first-child {
+    font-size: 32px;
+    color: #f00;
+    text-shadow: 2px 2px 1px #ff0, -2px 2px 1px #ff0, 2px -2px 1px #ff0,
+      -2px -2px 1px #ff0;
+  }
 
-  
   /* -------------------------------------map page */
   div:has(> .cta-btn-list) {
     box-shadow: 1px 1px 4px #cccccc;
@@ -813,5 +812,55 @@
   }
   .slideToggleTarget {
     display: none;
+  }
+  .option-list {
+    display: grid;
+    @apply grid-cols-2 gap-x-8 gap-y-8;
+  }
+  .option-item {
+    height: 100%;
+    background-color: #EFEFEF;
+
+  }
+  .option-header {
+    @apply bg-[#0088BB] text-white text-[16px] text-center py-4;
+  }
+  .option-body {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    column-gap: 16px;
+    padding: 8px;
+    background-color: #EFEFEF;
+  }
+  [alt='option-img'] {
+    height: auto;
+  }
+  .option-table {
+    font-size: 14px;
+    text-align: center;
+  }
+  .option-table,
+  .option-table tr,
+  .option-table td,
+  .option-table th {
+    border: 1px solid #ccc;
+  }
+  .option-table th {
+    width: 60%;
+    background-color: #0088bb;
+    padding: 8px;
+  }
+  .option-table.yellow th {
+    background-color: #FBBC00;
+  }
+  .option-table td {
+    width: 40%;
+    padding: 8px;
+  }
+  .option-badge {
+    background-color: #0088bb;
+    padding: 8px;
+    color: white;
+    display: inline-block;
   }
 }
