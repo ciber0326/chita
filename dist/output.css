@@ -2566,10 +2566,17 @@ table.map-table tr th:first-child,
 
 .option-list {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  -moz-column-gap: 2rem;
-       column-gap: 2rem;
-  row-gap: 2rem;
+  grid-template-columns: 100%;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .option-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+    row-gap: 2rem;
+  }
 }
 
 .option-item {

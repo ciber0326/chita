@@ -875,7 +875,7 @@
   }
   .option-list {
     display: grid;
-    @apply grid-cols-2 gap-x-8 gap-y-8;
+    @apply grid-cols-[100%] gap-4 md:grid-cols-2 md:gap-x-8 md:gap-y-8;
   }
   .option-item {
     height: 100%;
