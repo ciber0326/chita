@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  $('.hamburger').on('click', function () {
+    
+    $('body').toggleClass('open');
+    $(this).toggleClass('active');
+  })
   $('.toggle-image').on('click', function (e) {
     e.preventDefault() // Prevent default anchor behavior
     $('.toggle-target').slideToggle() // Toggle the image visibility with animation
@@ -64,7 +69,7 @@ $(document).ready(function () {
       delay: 5000,
       disableOnInteraction: false
     },
-    
+
     breakpoints: {
       // when window width is >= 320px
       340: {
@@ -86,7 +91,7 @@ $(document).ready(function () {
         spaceBetween: 20
       }
     }
-    
+
   })
 
   // price page

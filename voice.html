@@ -1,58 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>お客様の声・Q&A</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./dist/output.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>お客様の声・Q&A</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css">
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="./dist/output.css">
+    </head>
 
-<body>
-    <header class="pt-3.5">
-        <div class="h-container">
+    <body>
+        <header class="pt-3.5">
+            <div class="h-container">
 
-            <nav class="flex flex-wrap justify-between items-center gap-4 md:gap-0 mb-4">
-                <a href="./index.html" aria-label="site-logo">
-                    <img src="./assets/img/logo.png" alt="logo" class="block sm:mb-5 w-[200px] sm:w-[316px]"
-                        width="316">
-                </a>
-                <a class="inquiry-btn open-modal" href="javascript:;">
+                <nav
+                    class="flex flex-wrap justify-between items-center gap-4 md:gap-0 mb-4">
+                    <a href="./index.html" aria-label="site-logo">
+                        <img src="./assets/img/logo.png" alt="logo"
+                            class="block sm:mb-5 w-[200px] sm:w-[316px]"
+                            width="316">
+                    </a>
+                    <a class="inquiry-btn open-modal" href="javascript:;">
 
-                    電話番号・営業時間・アクセス
-                </a>
+                        電話番号・営業時間・アクセス
+                    </a>
 
-                <h1 class="sm:block hidden">知多・東海・大府で13920円のキーパーカーコーティング
-                </h1>
-            </nav>
+                    <h1 class="sm:block hidden">知多・東海・大府で13920円のキーパーカーコーティング
+                    </h1>
+                </nav>
 
-        </div>
-
-
-    </header>
-
-    <nav class="lg:block top-0 left-0 z-[99999] sticky hidden bg-blue w-full text-[16px]">
-        <div class="h-container">
-            <div class="flex justify-between items-center px-10 py-4 font-black text-white">
-                <a href="./index.html">ホーム</a>
-                <a href="./price.html">料金・割引・特典</a>
-                <a href="./map.html">地図・店舗紹介</a>
-                <a href="./reservation.html">ご予約・お問い合わせ</a>
-                <a href="./voice.html">お客様の声・Q&A</a>
-                <a href="./construction.html">施工事例</a>
-                <a href="./column.html">コラム</a>
             </div>
-        </div>
-        <nav class="sticky-nav">
+
+        </header>
+
+        <nav
+            class="lg:block top-0 left-0 z-[99999] sticky hidden bg-blue w-full text-[16px]">
+            <div class="h-container">
+                <div
+                    class="flex justify-between items-center px-10 py-4 font-black text-white">
+                    <a href="./index.html">ホーム</a>
+                    <a href="./price.html">料金・割引・特典</a>
+                    <a href="./map.html">地図・店舗紹介</a>
+                    <a href="./reservation.html">ご予約・お問い合わせ</a>
+                    <a href="./voice.html">お客様の声・Q&A</a>
+                    <a href="./construction.html">施工事例</a>
+                    <a href="./column.html">コラム</a>
+                </div>
+            </div>
+            <nav class="sticky-nav">
+                <a href="javascript:;" class="group">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0"
+                        width="256" height="256" viewBox="0 0 256 256"
+                        preserveAspectRatio="xMidYMid meet"
+                        class="group-hover:fill-blue">
+                        <g transform="translate(0,256) scale(0.1,-0.1)"
+                            fill="#ffffff" stroke="none">
+                            <path
+                                d="M537 2344 c-4 -4 -7 -29 -7 -56 l0 -48 -73 0 c-91 0 -163 -21 -219 -63 -50 -38 -103 -112 -118 -165 -7 -24 -10 -317 -10 -842 0 -909 -4 -860 79 -952 24 -27 67 -61 95 -76 l51 -27 945 0 945 0 50 27 c60 32 114 87 146 148 l24 45 5 680 c6 850 3 984 -28 1043 -35 66 -88 119 -150 149 -45 22 -73 28 -148 31 l-93 4 -3 52 -3 51 -105 0 -105 0 -3 -52 -3 -53 -529 0 -529 0 -3 53 -3 52 -101 3 c-55 1 -103 0 -107 -4z m1640 -329 c43 -18 63 -61 63 -135 l0 -60 -960 0 -960 0 0 60 c0 74 20 117 62 135 46 19 1748 19 1795 0z m-469 -738 l72 -72 -278 -278 c-240 -240 -283 -278 -314 -283 -52 -9 -79 11 -258 191 l-155 155 78 77 77 78 123 -123 122 -122 225 225 c124 124 227 225 230 225 3 0 38 -33 78 -73z" />
+                        </g>
+                    </svg>
+                    ご予約はコチラ！
+                </a>
+                <a href="tel+:0800-812-7809">
+                    <svg xmlns="http://www.w3.org/2000/svg" version="1.0"
+                        width="204" height="192" viewBox="0 0 204 192"
+                        preserveAspectRatio="xMidYMid meet"
+                        class="group-hover:fill-green">
+                        <g transform="translate(0,192) scale(0.1,-0.1)"
+                            fill="#ffffff" stroke="none">
+                            <path
+                                d="M365 1795 c-100 -44 -158 -74 -173 -93 -63 -77 -80 -228 -42 -378 24 -94 100 -255 174 -368 214 -327 583 -663 880 -801 232 -109 395 -122 526 -42 53 32 54 33 117 180 66 156 74 194 46 219 -44 37 -397 238 -419 238 -14 0 -59 -20 -102 -44 -122 -69 -200 -106 -222 -106 -24 0 -469 446 -484 485 -8 19 4 47 67 165 43 78 77 154 77 169 0 14 -10 42 -22 61 -12 19 -64 107 -115 195 -95 161 -114 185 -142 185 -9 -1 -83 -30 -166 -65z" />
+                            <path
+                                d="M930 1773 l0 -90 68 -6 c262 -22 510 -183 640 -417 44 -79 79 -191 93 -298 l12 -92 85 0 85 0 -6 93 c-29 459 -422 851 -895 892 l-82 8 0 -90z" />
+                            <path
+                                d="M930 1424 l0 -90 68 -10 c182 -29 329 -164 377 -345 8 -30 15 -66 15 -81 l0 -28 91 0 90 0 -6 58 c-34 306 -270 543 -573 578 l-62 7 0 -89z" />
+                        </g>
+                    </svg>
+                    0800-812-7809
+                </a>
+            </nav>
+        </nav>
+        <nav class="bottom-sticky-nav">
             <a href="javascript:;" class="group">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="256" height="256" viewBox="0 0 256 256"
-                    preserveAspectRatio="xMidYMid meet" class="group-hover:fill-blue">
-                    <g transform="translate(0,256) scale(0.1,-0.1)" fill="#ffffff" stroke="none">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0"
+                    width="256" height="256" viewBox="0 0 256 256"
+                    preserveAspectRatio="xMidYMid meet"
+                    class="group-hover:fill-blue">
+                    <g transform="translate(0,256) scale(0.1,-0.1)"
+                        fill="#ffffff" stroke="none">
                         <path
                             d="M537 2344 c-4 -4 -7 -29 -7 -56 l0 -48 -73 0 c-91 0 -163 -21 -219 -63 -50 -38 -103 -112 -118 -165 -7 -24 -10 -317 -10 -842 0 -909 -4 -860 79 -952 24 -27 67 -61 95 -76 l51 -27 945 0 945 0 50 27 c60 32 114 87 146 148 l24 45 5 680 c6 850 3 984 -28 1043 -35 66 -88 119 -150 149 -45 22 -73 28 -148 31 l-93 4 -3 52 -3 51 -105 0 -105 0 -3 -52 -3 -53 -529 0 -529 0 -3 53 -3 52 -101 3 c-55 1 -103 0 -107 -4z m1640 -329 c43 -18 63 -61 63 -135 l0 -60 -960 0 -960 0 0 60 c0 74 20 117 62 135 46 19 1748 19 1795 0z m-469 -738 l72 -72 -278 -278 c-240 -240 -283 -278 -314 -283 -52 -9 -79 11 -258 191 l-155 155 78 77 77 78 123 -123 122 -122 225 225 c124 124 227 225 230 225 3 0 38 -33 78 -73z" />
                     </g>
@@ -60,9 +103,12 @@
                 ご予約はコチラ！
             </a>
             <a href="tel+:0800-812-7809">
-                <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="204" height="192" viewBox="0 0 204 192"
-                    preserveAspectRatio="xMidYMid meet" class="group-hover:fill-green">
-                    <g transform="translate(0,192) scale(0.1,-0.1)" fill="#ffffff" stroke="none">
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.0"
+                    width="204" height="192" viewBox="0 0 204 192"
+                    preserveAspectRatio="xMidYMid meet"
+                    class="group-hover:fill-green">
+                    <g transform="translate(0,192) scale(0.1,-0.1)"
+                        fill="#ffffff" stroke="none">
                         <path
                             d="M365 1795 c-100 -44 -158 -74 -173 -93 -63 -77 -80 -228 -42 -378 24 -94 100 -255 174 -368 214 -327 583 -663 880 -801 232 -109 395 -122 526 -42 53 32 54 33 117 180 66 156 74 194 46 219 -44 37 -397 238 -419 238 -14 0 -59 -20 -102 -44 -122 -69 -200 -106 -222 -106 -24 0 -469 446 -484 485 -8 19 4 47 67 165 43 78 77 154 77 169 0 14 -10 42 -22 61 -12 19 -64 107 -115 195 -95 161 -114 185 -142 185 -9 -1 -83 -30 -166 -65z" />
                         <path
@@ -71,448 +117,492 @@
                             d="M930 1424 l0 -90 68 -10 c182 -29 329 -164 377 -345 8 -30 15 -66 15 -81 l0 -28 91 0 90 0 -6 58 c-34 306 -270 543 -573 578 l-62 7 0 -89z" />
                     </g>
                 </svg>
+
                 0800-812-7809
             </a>
         </nav>
-    </nav>
-    <nav class="bottom-sticky-nav">
-        <a href="javascript:;" class="group">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="256" height="256" viewBox="0 0 256 256"
-                preserveAspectRatio="xMidYMid meet" class="group-hover:fill-blue">
-                <g transform="translate(0,256) scale(0.1,-0.1)" fill="#ffffff" stroke="none">
-                    <path
-                        d="M537 2344 c-4 -4 -7 -29 -7 -56 l0 -48 -73 0 c-91 0 -163 -21 -219 -63 -50 -38 -103 -112 -118 -165 -7 -24 -10 -317 -10 -842 0 -909 -4 -860 79 -952 24 -27 67 -61 95 -76 l51 -27 945 0 945 0 50 27 c60 32 114 87 146 148 l24 45 5 680 c6 850 3 984 -28 1043 -35 66 -88 119 -150 149 -45 22 -73 28 -148 31 l-93 4 -3 52 -3 51 -105 0 -105 0 -3 -52 -3 -53 -529 0 -529 0 -3 53 -3 52 -101 3 c-55 1 -103 0 -107 -4z m1640 -329 c43 -18 63 -61 63 -135 l0 -60 -960 0 -960 0 0 60 c0 74 20 117 62 135 46 19 1748 19 1795 0z m-469 -738 l72 -72 -278 -278 c-240 -240 -283 -278 -314 -283 -52 -9 -79 11 -258 191 l-155 155 78 77 77 78 123 -123 122 -122 225 225 c124 124 227 225 230 225 3 0 38 -33 78 -73z" />
-                </g>
-            </svg>
-            ご予約はコチラ！
-        </a>
-        <a href="tel+:0800-812-7809">
-            <svg xmlns="http://www.w3.org/2000/svg" version="1.0" width="204" height="192" viewBox="0 0 204 192"
-                preserveAspectRatio="xMidYMid meet" class="group-hover:fill-green">
-                <g transform="translate(0,192) scale(0.1,-0.1)" fill="#ffffff" stroke="none">
-                    <path
-                        d="M365 1795 c-100 -44 -158 -74 -173 -93 -63 -77 -80 -228 -42 -378 24 -94 100 -255 174 -368 214 -327 583 -663 880 -801 232 -109 395 -122 526 -42 53 32 54 33 117 180 66 156 74 194 46 219 -44 37 -397 238 -419 238 -14 0 -59 -20 -102 -44 -122 -69 -200 -106 -222 -106 -24 0 -469 446 -484 485 -8 19 4 47 67 165 43 78 77 154 77 169 0 14 -10 42 -22 61 -12 19 -64 107 -115 195 -95 161 -114 185 -142 185 -9 -1 -83 -30 -166 -65z" />
-                    <path
-                        d="M930 1773 l0 -90 68 -6 c262 -22 510 -183 640 -417 44 -79 79 -191 93 -298 l12 -92 85 0 85 0 -6 93 c-29 459 -422 851 -895 892 l-82 8 0 -90z" />
-                    <path
-                        d="M930 1424 l0 -90 68 -10 c182 -29 329 -164 377 -345 8 -30 15 -66 15 -81 l0 -28 91 0 90 0 -6 58 c-34 306 -270 543 -573 578 l-62 7 0 -89z" />
-                </g>
-            </svg>
+        <div class="sp-global-menu">
+            <nav>
+                <a href="./index.html">ホーム</a>
+                <a href="./price.html">料金・割引・特典</a>
+                <a href="./map.html">地図・店舗紹介</a>
+                <a href="./reservation.html">ご予約・お問い合わせ</a>
+                <a href="./voice.html">お客様の声・Q&A</a>
+                <a href="./construction.html">施工事例</a>
+                <a href="./column.html">コラム</a>
+            </nav>
 
-            0800-812-7809
-        </a>
-    </nav>
-
-    <div class="modal-container">
-        <div class="p-0 w-full modal-wrapper">
-            <div class="bg-blue py-4 font-bold text-[20px] text-center text-white md:text-[24px]">
-                電話番号・営業時間・アクセス
-            </div>
-            <div class="modal-body">
-                <div class="gap-x-[20px] gap-y-[20px] grid grid-cols-1 lg:grid-cols-2">
-                    <a class="window" href="https://chita-coating.com/map_yutai.html#map1">
-                        <p class="title">長浦インター店</p>
-                        <p class="content">
-                            ・長浦駅から車で4分<br>
-                            ・阿久比ICから車で10分<br>
-                            <br><br>
-                            ★「中日ガス」さんの横、向かいには「ファミリーマート知多岡田店」がございます。
-                        </p>
-                    </a>
-                    <div class="window">
-                        <p class="title">コーティングのご予約・問合せ(通話無料)
-                        </p>
-                        <p class="text-center content">
-                            <a href="tel:0800-812-7809"
-                                class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
-                                <img src="./assets/img/phone.png" alt="phone-icon"
-                                    class="rounded-[50%] w-[40px] lg:w-[80px] h-auto lg:h-[80px]" width="80"
-                                    height="80">
-                                0800-812-7809
-                            </a><br>
-                            営業時間: 8:00～19:00 (定休日：なし)
-                        </p>
-                    </div>
-                    <a class="window" href="https://chita-coating.com/map_yutai.html#map2">
-                        <p class="title">新舞子店
-                        </p>
-                        <p class="text-center content">
-                            リニューアルオープン準備中
-                        </p>
-                    </a>
-
-                    <div class="window">
-                        <p class="title">2025年4月リニューアルオープン予定<br>
-                            -新舞子店で施工完了後のお問合せ-
-                        </p>
-                        <p class="text-center content">
-                            <a href="tel:0120-996-777"
-                                class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
-                                <img src="./assets/img/phone.png" alt="phone-icon"
-                                    class="rounded-[50%] w-[40px] lg:w-[80px] h-[40px] h-auto lg:h-[80px]" width="80"
-                                    height="80">
-                                0120-996-777
-                            </a><br>
-                            営業時間: 9:00～19:00 (定休日：月曜 ※月曜祝日の場合は翌火曜)
-                        </p>
-                    </div>
-                </div>
-                <img src="./assets/img/modal-img-01.png" class="block mx-auto my-4 max-w-full" alt="modal-ctn-img">
-                <a href="https://chita-coating.com/choice/" class="w-full">
-                    <img src="./assets/img/modal-img-02.png" class="block mx-auto my-4 max-w-full" alt="modal-ctn-img">
-                </a>
-                <a href="https://handa-coating.com/" class="w-full">
-                    <img src="./assets/img/modal-img-03.png" class="block mx-auto my-4 max-w-full" alt="modal-ctn-img">
-                </a>
-            </div>
-            <a href="javascript:;" class="modal-close">&times;</a>
         </div>
-    </div>
-    <main id="reservation" style="
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="modal-container">
+            <div class="p-0 w-full modal-wrapper">
+                <div
+                    class="bg-blue py-4 font-bold text-[20px] text-center text-white md:text-[24px]">
+                    電話番号・営業時間・アクセス
+                </div>
+                <div class="modal-body">
+                    <div
+                        class="gap-x-[20px] gap-y-[20px] grid grid-cols-1 lg:grid-cols-2">
+                        <a class="window"
+                            href="https://chita-coating.com/map_yutai.html#map1">
+                            <p class="title">長浦インター店</p>
+                            <p class="content">
+                                ・長浦駅から車で4分<br>
+                                ・阿久比ICから車で10分<br>
+                                <br><br>
+                                ★「中日ガス」さんの横、向かいには「ファミリーマート知多岡田店」がございます。
+                            </p>
+                        </a>
+                        <div class="window">
+                            <p class="title">コーティングのご予約・問合せ(通話無料)
+                            </p>
+                            <p class="text-center content">
+                                <a href="tel:0800-812-7809"
+                                    class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
+                                    <img src="./assets/img/phone.png"
+                                        alt="phone-icon"
+                                        class="rounded-[50%] w-[40px] lg:w-[80px] h-auto lg:h-[80px]"
+                                        width="80"
+                                        height="80">
+                                    0800-812-7809
+                                </a><br>
+                                営業時間: 8:00～19:00 (定休日：なし)
+                            </p>
+                        </div>
+                        <a class="window"
+                            href="https://chita-coating.com/map_yutai.html#map2">
+                            <p class="title">新舞子店
+                            </p>
+                            <p class="text-center content">
+                                リニューアルオープン準備中
+                            </p>
+                        </a>
+
+                        <div class="window">
+                            <p class="title">2025年4月リニューアルオープン予定<br>
+                                -新舞子店で施工完了後のお問合せ-
+                            </p>
+                            <p class="text-center content">
+                                <a href="tel:0120-996-777"
+                                    class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
+                                    <img src="./assets/img/phone.png"
+                                        alt="phone-icon"
+                                        class="rounded-[50%] w-[40px] lg:w-[80px] h-[40px] h-auto lg:h-[80px]"
+                                        width="80"
+                                        height="80">
+                                    0120-996-777
+                                </a><br>
+                                営業時間: 9:00～19:00 (定休日：月曜 ※月曜祝日の場合は翌火曜)
+                            </p>
+                        </div>
+                    </div>
+                    <img src="./assets/img/modal-img-01.png"
+                        class="block mx-auto my-4 max-w-full"
+                        alt="modal-ctn-img">
+                    <a href="https://chita-coating.com/choice/" class="w-full">
+                        <img src="./assets/img/modal-img-02.png"
+                            class="block mx-auto my-4 max-w-full"
+                            alt="modal-ctn-img">
+                    </a>
+                    <a href="https://handa-coating.com/" class="w-full">
+                        <img src="./assets/img/modal-img-03.png"
+                            class="block mx-auto my-4 max-w-full"
+                            alt="modal-ctn-img">
+                    </a>
+                </div>
+                <a href="javascript:;" class="modal-close">&times;</a>
+            </div>
+        </div>
+        <main id="reservation" style="
             background-image: url(./assets/img/light-blue-bg.png);
             background-position: center top;
             background-repeat: no-repeat;
             background-size: 100% auto;
         ">
-        <h2 class="sub-page-title">
-            お客様の声
-        </h2>
-        <section class="page-nav">
-            <div class="o-container">
-                <nav class="flex flex-wrap justify-center gap-x-4 gap-y-4 py-8">
-                    <a href="javascript:;" class="group voice-btn" style="
+            <h2 class="sub-page-title">
+                お客様の声
+            </h2>
+            <section class="page-nav">
+                <div class="o-container">
+                    <nav
+                        class="flex flex-wrap justify-center gap-x-4 gap-y-4 py-8">
+                        <a href="javascript:;" class="group voice-btn" style="
                             
                             background-image: linear-gradient(to bottom, #029FB0b0, #029FB0b0) ,url(./assets/img/home/hero-slider-img-01.png);
                         ">
-                        <div class="text-[28px]">
-                            お客様の声<br>
-                            <span class="text-[0.6em]">
+                            <div class="text-[28px]">
+                                お客様の声<br>
+                                <span class="text-[0.6em]">
 
-                                詳しくはここをクリック!
-                            </span>
+                                    詳しくはここをクリック!
+                                </span>
 
+                            </div>
+                            <img
+                                src="./assets/img/price/navigation/arrow-01.png"
+                                class="transition-transform group-hover:translate-x-[10%] duration-300"
+                                alt="icon-arrow">
 
-                        </div>
-                        <img src="./assets/img/price/navigation/arrow-01.png"
-                            class="transition-transform group-hover:translate-x-[10%] duration-300" alt="icon-arrow">
-
-                    </a>
-                    <a href="javascript:;" class="group voice-btn" style="
+                        </a>
+                        <a href="javascript:;" class="group voice-btn" style="
                             
                             background-image: linear-gradient(to bottom, #42B59494, #42B59494) ,url(./assets/img/home/hero-slider-img-01.png);
                         ">
-                        <div class="text-[28px]">
-                            Q＆A <br>
-                            <span class="text-[0.6em]">
-                                詳しくはここをクリック!
-                            </span>
-                        </div>
-                        <img src="./assets/img/price/navigation/arrow-02.png"
-                            class="transition-transform group-hover:translate-x-[10%] duration-300" alt="icon-arrow">
+                            <div class="text-[28px]">
+                                Q＆A <br>
+                                <span class="text-[0.6em]">
+                                    詳しくはここをクリック!
+                                </span>
+                            </div>
+                            <img
+                                src="./assets/img/price/navigation/arrow-02.png"
+                                class="transition-transform group-hover:translate-x-[10%] duration-300"
+                                alt="icon-arrow">
 
+                        </a>
+                    </nav>
+
+                </div>
+            </section>
+            <section id="sec-voice">
+                <div class="s-container">
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        2023年6月に｢ダイヤモンドキーパー」を施工してもらい、以降、手洗い洗車やメンテナンスなどで毎月お世話になっています。それなりの費用はかかりますが、コーティングの状態や丁寧な洗車はもちろん、店長さんをはじめスタッフの方々の気持ちいい接客に満足です。欲を言えば、家のもっと近くにあると嬉しいですけど。
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングするお店を探していたところ、友人の紹介でスーパーウォッシュさんにEX <br>
+                        KEEPERを施工して頂きました。施工メニューの説明も親切･丁寧で良い対応でしたよ！コーティングの事で不明な点も親身になって相談に乗ってくれるので安心です。アフターメンテナンスもしっかりしているのでオススメです(^^)v
+                        <br>
+                        （S・K様/EXキーパー スーパーウォッシュ東新潟店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コマーシャルで見て、雨や水かければ綺麗になるなんて嘘でしょ！なんて思ったけど薄汚れ状態で雨の日に外に置いといたら本当に汚れが落ちました。エコダイヤKeePer本当に最高ですね。おすすめです。<br>
+                        （K・I様/エコダイヤキーパー エイトロード白根店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        雨も弾いて思っていたよりもキレイになりホイールもキレイになったのでコーティングをして良かったです。<br>
+                        （K・S様/クリスタルキーパー スーパーロード県庁前店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        雨も弾いて思っていたよりもキレイになりホイールもキレイになったのでコーティングをして良かったです。<br>
+                        （K・S様/クリスタルキーパー スーパーロード県庁前店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
+                        撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
+                        （T・O様/クリスタルキーパー スーパーロード県庁前店）<br>
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
+                        撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
+                        （T・O様/クリスタルキーパー スーパーロード県庁前店）<br>
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
+                        撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
+                        （T・O様/クリスタルキーパー スーパーロード県庁前店）<br>
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
+                        撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
+                        （T・O様/クリスタルキーパー スーパーロード県庁前店）<br>
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        中古車の購入を機に初めて施工しました。今までコーティングをしたことがなかったので半信半疑でしたが、想像以上に良かったです。艶が戻り水弾きもいいので雨が降っても優越感に浸れます。（K・K様/フレッシュキーパー
+                        淀川店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングをしてから自宅での洗車が楽になった。もう少しで１年経過するが撥水も継続していてる
+                        １２月に再施工予定と家族の車に施工を考えている。<br>
+                        （A・K様/クリスタルキーパー 新潟東店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングをしてから自宅での洗車が楽になった。もう少しで１年経過するが撥水も継続していてる
+                        １２月に再施工予定と家族の車に施工を考えている。<br>
+                        （A・K様/クリスタルキーパー 新潟東店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        白い車なのでコーティングでツヤが出て白が際立つ。ボディの触り心地もツルツルして気持ちいい。（K・Y様/クリスタルキーパー
+                        おばこロード道形店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        白い車なのでコーティングでツヤが出て白が際立つ。ボディの触り心地もツルツルして気持ちいい。（K・Y様/クリスタルキーパー
+                        おばこロード道形店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングしたことで艶だけでなく色の深みが出て感動した。水弾きもよく雨の日も気分がいい。（K・T様/クリスタルキーパー
+                        卸新町店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        コーティングしたことで艶だけでなく色の深みが出て感動した。水弾きもよく雨の日も気分がいい。（K・T様/クリスタルキーパー
+                        卸新町店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        車を取りに来た時点で艶が違ってビックリした！新車に施工したのにここまで違うとはホント驚きです！雨が降って汚れも取れＣＭのままんで良かった。水弾きもすごく気持ちがいいです。<br>
+                        （M・K様/フレッシュキーパー スカイロード亀田西店）
+                    </div>
+                    <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
+                        元々洗車傷が多い車でしたが、コーティングを施工してかなり目立たなくなりました。<br>
+                        ダーク系のボディカラーなので、キレイが続くようにこれからもメンテナンスをこちらで任せたいと思います。<br>
+                        （Y・K様/ダイヤモンドキーパー サンロード小針店）
+                    </div>
+                </div>
+            </section>
+            <section id="voice-faq-sec">
+
+                <h3 class="sub-page-title">
+                    Q&A
+                </h3>
+                <div class="s-container">
+                    <ul class="faq-list">
+                        <li class="faq-item">
+                            <div class="faq-header">
+                                <img src="./assets/img/voice/question-mark.png"
+                                    alt="question-mark" width="51" height="42">
+                                <span>
+                                    新車を購入したのですが、すぐコーティングしても大丈夫ですか？
+                                </span>
+                                <div class="header-icon">
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                </div>
+                            </div>
+                            <div class="faq-body">
+                                <img src="./assets/img/voice/answer-mark.png"
+                                    alt="answer-mark" width="51" height="42">
+                                <div>
+                                    <p
+                                        class="py-2 font-bold text-[18px] text-brown">コーティングは、納車後すぐのタイミングがお勧めです。</p>
+                                    <p>
+                                        キーパーコーティングは、非常に細かい分子でコーティングを定着させていきます。例えば、塗りたての塗装でも、通気性に優れておりますので塗装の乾燥過程に出てくるガスも、コーティングした後でもキレイに抜けていきます。多くのガラスコーティングに入っているキシレンなどの『有機溶剤』を使わないため塗装に優しく、侵食してしまうことはありませんのでご安心してお任せ下さい。
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-header">
+                                <img src="./assets/img/voice/question-mark.png"
+                                    alt="question-mark" width="51" height="42">
+                                <span>
+                                    コーティング施工後の手入れはどうすればいいですか?
+                                </span>
+                                <div class="header-icon">
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                </div>
+                            </div>
+                            <div class="faq-body">
+                                <img src="./assets/img/voice/answer-mark.png"
+                                    alt="answer-mark" width="51" height="42">
+                                <div>
+                                    <p
+                                        class="py-2 font-bold text-[18px] text-brown">
+                                        通常の水洗い洗車 シャンプー洗車で結構です。
+                                    </p>
+                                    <p>
+                                        洗車機での洗車も、 全く問題ありません。<br>
+                                        洗った後は拭き上げをしてください。 水道水には、ミネラルが多く含まれているため、
+                                        乾くとシミの原因となります。 (雨は水道水や井戸水に 比べ、<br>
+                                        ミネラル分は非常に少ないため 「雨」
+                                        が降る度に拭かなくても問題は全くありません)br
+                                        効果をしっかり発揮するために、シャンプーを使う場合は、コーティング剤やコンパウンドの入っていないものをご使用ください。
+                                        (鳥のフ ン、樹液、
+                                        花粉が付いた場合は、なるべく早めの洗車をお願いします)
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-header">
+                                <img src="./assets/img/voice/question-mark.png"
+                                    alt="question-mark" width="51" height="42">
+                                <span>
+                                    コーティングをした後は、水に濡らさないほうがいいですか？
+                                </span>
+                                <div class="header-icon">
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                </div>
+                            </div>
+                            <div class="faq-body">
+                                <img src="./assets/img/voice/answer-mark.png"
+                                    alt="answer-mark" width="51" height="42">
+                                <div>
+                                    <p
+                                        class="py-2 font-bold text-[18px] text-brown">水に濡れても問題ありません。</p>
+                                    <p>
+                                        作業時間の中に必要な乾燥時間などは含まれております。キーパーコーティングは施工完了後、例えば雨の中お帰りでも効果が変わることはありませんのでご安心ください。
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-header">
+                                <img src="./assets/img/voice/question-mark.png"
+                                    alt="question-mark" width="51" height="42">
+                                <span>
+                                    コーティングの施工で塗装は傷みませんか？ </span>
+                                <div class="header-icon">
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                </div>
+                            </div>
+                            <div class="faq-body">
+                                <img src="./assets/img/voice/answer-mark.png"
+                                    alt="answer-mark" width="51" height="42">
+                                <div>
+                                    <p
+                                        class="py-2 font-bold text-[18px] text-brown">
+                                        ご安心ください、傷みません。
+                                    </p>
+                                    <p>
+                                        私たちは「塗装を絶対に傷めない」というポリシーを強く持っています。そのため、塗装を傷めるトルエン、キシレンなどの有機溶剤は一切含まれておりません。施工においても万全を期しております。
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-header">
+                                <img src="./assets/img/voice/question-mark.png"
+                                    alt="question-mark" width="51" height="42">
+                                <span>
+                                    輸入車にも対応していますか？ </span>
+                                <div class="header-icon">
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                </div>
+                            </div>
+                            <div class="faq-body">
+                                <img src="./assets/img/voice/answer-mark.png"
+                                    alt="answer-mark" width="51" height="42">
+                                <div>
+                                    <p
+                                        class="py-2 font-bold text-[18px] text-brown">
+                                        対応しています。
+                                    </p>
+                                    <p>
+                                        ドイツ、フランス、アメリカ、イギリス、イタリア、
+                                        日本すべての国の車に施行できます。
+                                        特にダイヤモンドキーパーはドイツのSONAX製
+                                        で、ドイツ本国ではベンツ、BMWなどに純正指定されています。
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-header">
+                                <img src="./assets/img/voice/question-mark.png"
+                                    alt="question-mark" width="51" height="42">
+                                <span>
+                                    施工後に粘土で鉄粉除去をした場合どうなりますか? </span>
+                                <div class="header-icon">
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                </div>
+                            </div>
+                            <div class="faq-body">
+                                <img src="./assets/img/voice/answer-mark.png"
+                                    alt="answer-mark" width="51" height="42">
+                                <div>
+                                    <p
+                                        class="py-2 font-bold text-[18px] text-brown">
+                                        部分的にコーティング皮膜が落ちることも考えられます
+                                    </p>
+                                    <p>
+                                        鉄粉取り作業を実施する場合はメンテナンス・ 再施工を行ってください。
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="faq-item">
+                            <div class="faq-header">
+                                <img src="./assets/img/voice/question-mark.png"
+                                    alt="question-mark" width="51" height="42">
+                                <span>
+                                    誤ってワックス(撥水コーティング)をかけてしまいました。 </span>
+                                <div class="header-icon">
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                    <div class="absolute bg-[#BBEBDC]"></div>
+                                </div>
+                            </div>
+                            <div class="faq-body">
+                                <img src="./assets/img/voice/answer-mark.png"
+                                    alt="answer-mark" width="51" height="42">
+                                <div>
+                                    <p
+                                        class="py-2 font-bold text-[18px] text-brown">
+                                        ご安心下さい。 それほど心配は要りません。
+                                    </p>
+                                    <p>
+                                        ワックスあるいは撥水コートが塗られると表面がそのワックスなどの性質になります。
+                                        多くの場合、 汚れやすく艶が落ちる現象となります。 しかしワックスなどの場合、
+                                        時間がたてば自然に落ちてしまう場合もありますので、それほど心配は要りません。
+                                        ただ、中にはしつこく残る コーティングもありますので、
+                                        そのような場合には再施工をおすすめします。
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="o-container">
+                <nav>
+                    <a href="./index.html">
+                        ホーム
                     </a>
+                    <a href="./price.html">
+                        料金・割引・特典
+                    </a>
+                    <a href="./map.html">
+                        地図・店舗紹介
+                    </a>
+                    <a href="./reservation.html">
+                        ご予約・お問い合わせ
+                    </a>
+                    <a href="./voice.html">
+                        お客様の声・Q&A
+                    </a>
+                    <a href="./construction.html">
+                        施工事例
+                    </a>
+                    <a href="./column.html">
+                        コラム
+                    </a>
+
                 </nav>
+                <br>
+                <hr class="bg-[#E5E6E8]">
+                <br class="hidden md:block"><br>
+                <p class="text-[12px] text-center">
+                    <span>Copyright (C) 2024 All Rights Reserved.</span><br
+                        class="hidden md:block">
+                    <span>
+                        当サイト内の全ての画像・文章の無断転載、転用を禁止致します。
+                    </span>
 
+                </p>
+                <br class="hidden md:block"><br>
+                <p class="font-black text-center">
+                    知多・東海・大府で13920円のキーパーカーコーティング
+                </p>
 
             </div>
-        </section>
-        <section id="sec-voice">
-            <div class="s-container">
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    2023年6月に｢ダイヤモンドキーパー」を施工してもらい、以降、手洗い洗車やメンテナンスなどで毎月お世話になっています。それなりの費用はかかりますが、コーティングの状態や丁寧な洗車はもちろん、店長さんをはじめスタッフの方々の気持ちいい接客に満足です。欲を言えば、家のもっと近くにあると嬉しいですけど。
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングするお店を探していたところ、友人の紹介でスーパーウォッシュさんにEX <br>
-                    KEEPERを施工して頂きました。施工メニューの説明も親切･丁寧で良い対応でしたよ！コーティングの事で不明な点も親身になって相談に乗ってくれるので安心です。アフターメンテナンスもしっかりしているのでオススメです(^^)v
-                    <br>
-                    （S・K様/EXキーパー　スーパーウォッシュ東新潟店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コマーシャルで見て、雨や水かければ綺麗になるなんて嘘でしょ！なんて思ったけど薄汚れ状態で雨の日に外に置いといたら本当に汚れが落ちました。エコダイヤKeePer本当に最高ですね。おすすめです。<br>
-                    （K・I様/エコダイヤキーパー　エイトロード白根店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    雨も弾いて思っていたよりもキレイになりホイールもキレイになったのでコーティングをして良かったです。<br>
-                    （K・S様/クリスタルキーパー　スーパーロード県庁前店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    雨も弾いて思っていたよりもキレイになりホイールもキレイになったのでコーティングをして良かったです。<br>
-                    （K・S様/クリスタルキーパー　スーパーロード県庁前店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
-                    撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
-                    （T・O様/クリスタルキーパー　スーパーロード県庁前店）<br>
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
-                    撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
-                    （T・O様/クリスタルキーパー　スーパーロード県庁前店）<br>
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
-                    撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
-                    （T・O様/クリスタルキーパー　スーパーロード県庁前店）<br>
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングする事で普段の洗車や虫が付着しても簡単に落とせるので手入れが楽になります。
-                    撥水も持続するのでうれしいです。いつもこちらにお願いしています。<br>
-                    （T・O様/クリスタルキーパー　スーパーロード県庁前店）<br>
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    中古車の購入を機に初めて施工しました。今までコーティングをしたことがなかったので半信半疑でしたが、想像以上に良かったです。艶が戻り水弾きもいいので雨が降っても優越感に浸れます。（K・K様/フレッシュキーパー　淀川店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングをしてから自宅での洗車が楽になった。もう少しで１年経過するが撥水も継続していてる　　１２月に再施工予定と家族の車に施工を考えている。<br>
-                    （A・K様/クリスタルキーパー　新潟東店）　
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングをしてから自宅での洗車が楽になった。もう少しで１年経過するが撥水も継続していてる　　１２月に再施工予定と家族の車に施工を考えている。<br>
-                    （A・K様/クリスタルキーパー　新潟東店）　
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    白い車なのでコーティングでツヤが出て白が際立つ。ボディの触り心地もツルツルして気持ちいい。（K・Y様/クリスタルキーパー　おばこロード道形店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    白い車なのでコーティングでツヤが出て白が際立つ。ボディの触り心地もツルツルして気持ちいい。（K・Y様/クリスタルキーパー　おばこロード道形店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングしたことで艶だけでなく色の深みが出て感動した。水弾きもよく雨の日も気分がいい。（K・T様/クリスタルキーパー　卸新町店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    コーティングしたことで艶だけでなく色の深みが出て感動した。水弾きもよく雨の日も気分がいい。（K・T様/クリスタルキーパー　卸新町店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    車を取りに来た時点で艶が違ってビックリした！新車に施工したのにここまで違うとはホント驚きです！雨が降って汚れも取れＣＭのままんで良かった。水弾きもすごく気持ちがいいです。<br>
-                    （M・K様/フレッシュキーパー　スカイロード亀田西店）
-                </div>
-                <div class="bg-[#FFF2C0] mb-[38px] px-8 py-4">
-                    元々洗車傷が多い車でしたが、コーティングを施工してかなり目立たなくなりました。<br>
-                    ダーク系のボディカラーなので、キレイが続くようにこれからもメンテナンスをこちらで任せたいと思います。<br>
-                    （Y・K様/ダイヤモンドキーパー　サンロード小針店）
-                </div>
-            </div>
-        </section>
-        <section id="voice-faq-sec">
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
 
-            <h3 class="sub-page-title">
-                Q&A
-            </h3>
-            <div class="s-container">
-                <ul class="faq-list">
-                    <li class="faq-item">
-                        <div class="faq-header">
-                            <img src="./assets/img/voice/question-mark.png" alt="question-mark" width="51" height="42">
-                            <span>
-                                新車を購入したのですが、すぐコーティングしても大丈夫ですか？
-                            </span>
-                            <div class="header-icon">
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                            </div>
-                        </div>
-                        <div class="faq-body">
-                            <img src="./assets/img/voice/answer-mark.png" alt="answer-mark" width="51" height="42">
-                            <div>
-                                <p class="py-2 font-bold text-[18px] text-brown">コーティングは、納車後すぐのタイミングがお勧めです。</p>
-                                <p>
-                                    キーパーコーティングは、非常に細かい分子でコーティングを定着させていきます。例えば、塗りたての塗装でも、通気性に優れておりますので塗装の乾燥過程に出てくるガスも、コーティングした後でもキレイに抜けていきます。多くのガラスコーティングに入っているキシレンなどの『有機溶剤』を使わないため塗装に優しく、侵食してしまうことはありませんのでご安心してお任せ下さい。
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="faq-item">
-                        <div class="faq-header">
-                            <img src="./assets/img/voice/question-mark.png" alt="question-mark" width="51" height="42">
-                            <span>
-                                コーティング施工後の手入れはどうすればいいですか?
-                            </span>
-                            <div class="header-icon">
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                            </div>
-                        </div>
-                        <div class="faq-body">
-                            <img src="./assets/img/voice/answer-mark.png" alt="answer-mark" width="51" height="42">
-                            <div>
-                                <p class="py-2 font-bold text-[18px] text-brown">
-                                    通常の水洗い洗車 シャンプー洗車で結構です。
-                                </p>
-                                <p>
-                                    洗車機での洗車も、 全く問題ありません。<br>
-                                    洗った後は拭き上げをしてください。 水道水には、ミネラルが多く含まれているため、 乾くとシミの原因となります。 (雨は水道水や井戸水に 比べ、<br>
-                                    ミネラル分は非常に少ないため 「雨」 が降る度に拭かなくても問題は全くありません)br
-                                    効果をしっかり発揮するために、シャンプーを使う場合は、コーティング剤やコンパウンドの入っていないものをご使用ください。 (鳥のフ ン、樹液、
-                                    花粉が付いた場合は、なるべく早めの洗車をお願いします)
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="faq-item">
-                        <div class="faq-header">
-                            <img src="./assets/img/voice/question-mark.png" alt="question-mark" width="51" height="42">
-                            <span>
-                                コーティングをした後は、水に濡らさないほうがいいですか？
-                            </span>
-                            <div class="header-icon">
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                            </div>
-                        </div>
-                        <div class="faq-body">
-                            <img src="./assets/img/voice/answer-mark.png" alt="answer-mark" width="51" height="42">
-                            <div>
-                                <p class="py-2 font-bold text-[18px] text-brown">水に濡れても問題ありません。</p>
-                                <p>
-                                    作業時間の中に必要な乾燥時間などは含まれております。キーパーコーティングは施工完了後、例えば雨の中お帰りでも効果が変わることはありませんのでご安心ください。
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="faq-item">
-                        <div class="faq-header">
-                            <img src="./assets/img/voice/question-mark.png" alt="question-mark" width="51" height="42">
-                            <span>
-                                コーティングの施工で塗装は傷みませんか？ </span>
-                            <div class="header-icon">
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                            </div>
-                        </div>
-                        <div class="faq-body">
-                            <img src="./assets/img/voice/answer-mark.png" alt="answer-mark" width="51" height="42">
-                            <div>
-                                <p class="py-2 font-bold text-[18px] text-brown">
-                                    ご安心ください、傷みません。
-                                </p>
-                                <p>
-                                    私たちは「塗装を絶対に傷めない」というポリシーを強く持っています。そのため、塗装を傷めるトルエン、キシレンなどの有機溶剤は一切含まれておりません。施工においても万全を期しております。
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="faq-item">
-                        <div class="faq-header">
-                            <img src="./assets/img/voice/question-mark.png" alt="question-mark" width="51" height="42">
-                            <span>
-                                輸入車にも対応していますか？ </span>
-                            <div class="header-icon">
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                            </div>
-                        </div>
-                        <div class="faq-body">
-                            <img src="./assets/img/voice/answer-mark.png" alt="answer-mark" width="51" height="42">
-                            <div>
-                                <p class="py-2 font-bold text-[18px] text-brown">
-                                    対応しています。
-                                </p>
-                                <p>
-                                    ドイツ、フランス、アメリカ、イギリス、イタリア、 日本すべての国の車に施行できます。 特にダイヤモンドキーパーはドイツのSONAX製
-                                    で、ドイツ本国ではベンツ、BMWなどに純正指定されています。
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="faq-item">
-                        <div class="faq-header">
-                            <img src="./assets/img/voice/question-mark.png" alt="question-mark" width="51" height="42">
-                            <span>
-                                施工後に粘土で鉄粉除去をした場合どうなりますか? </span>
-                            <div class="header-icon">
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                            </div>
-                        </div>
-                        <div class="faq-body">
-                            <img src="./assets/img/voice/answer-mark.png" alt="answer-mark" width="51" height="42">
-                            <div>
-                                <p class="py-2 font-bold text-[18px] text-brown">
-                                    部分的にコーティング皮膜が落ちることも考えられます
-                                </p>
-                                <p>
-                                    鉄粉取り作業を実施する場合はメンテナンス・ 再施工を行ってください。
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="faq-item">
-                        <div class="faq-header">
-                            <img src="./assets/img/voice/question-mark.png" alt="question-mark" width="51" height="42">
-                            <span>
-                                誤ってワックス(撥水コーティング)をかけてしまいました。 </span>
-                            <div class="header-icon">
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                                <div class="absolute bg-[#BBEBDC]"></div>
-                            </div>
-                        </div>
-                        <div class="faq-body">
-                            <img src="./assets/img/voice/answer-mark.png" alt="answer-mark" width="51" height="42">
-                            <div>
-                                <p class="py-2 font-bold text-[18px] text-brown">
-                                    ご安心下さい。 それほど心配は要りません。
-                                </p>
-                                <p>
-                                    ワックスあるいは撥水コートが塗られると表面がそのワックスなどの性質になります。 多くの場合、 汚れやすく艶が落ちる現象となります。 しかしワックスなどの場合、
-                                    時間がたてば自然に落ちてしまう場合もありますので、それほど心配は要りません。 ただ、中にはしつこく残る コーティングもありますので、
-                                    そのような場合には再施工をおすすめします。
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="o-container">
-            <nav>
-                <a href="./index.html">
-                    ホーム
-                </a>
-                <a href="./price.html">
-                    料金・割引・特典
-                </a>
-                <a href="./map.html">
-                    地図・店舗紹介
-                </a>
-                <a href="./reservation.html">
-                    ご予約・お問い合わせ
-                </a>
-                <a href="./voice.html">
-                    お客様の声・Q&A
-                </a>
-                <a href="./construction.html">
-                    施工事例
-                </a>
-                <a href="./column.html">
-                    コラム
-                </a>
-
-            </nav>
-            <br>
-            <hr class="bg-[#E5E6E8]">
-            <br class="hidden md:block"><br>
-            <p class="text-[12px] text-center">
-                <span>Copyright (C) 2024 All Rights Reserved.</span><br class="hidden md:block">
-                <span>
-                    当サイト内の全ての画像・文章の無断転載、転用を禁止致します。
-                </span>
-
-            </p>
-            <br class="hidden md:block"><br>
-            <p class="font-black text-center">
-                知多・東海・大府で13920円のキーパーカーコーティング
-            </p>
-
-        </div>
-    </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
-    <script src="./assets/js/style.js"></script>
-</body>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+        <script src="./assets/js/style.js"></script>
+    </body>
 
 </html>
