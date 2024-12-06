@@ -3154,6 +3154,14 @@ table.map-table tr th:first-child,
   background-color: rgb(253 241 80 / var(--tw-bg-opacity));
 }
 
+.bg-cover {
+  background-size: cover;
+}
+
+.bg-center {
+  background-position: center;
+}
+
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;

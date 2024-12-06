@@ -4,6 +4,9 @@
 
 @layer components {
   /* --------------------------------common */
+  html {
+    scroll-behavior: smooth;
+  }
   :root {
     --clr-blue: #00349a;
     --clr-green: #00c61d;
