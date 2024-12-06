@@ -923,4 +923,16 @@
     color: white;
     display: inline-block;
   }
+  .purple {
+    @apply text-[#800080] text-[14px] mb-2;
+  }
+  [alt="banner-img"] {
+    @apply h-fit;
+  }
+  .price-banner-wrapper {
+    @apply flex lg:flex-row flex-col gap-x-4 mb-[20px] text-[14px] gap-y-4 items-center border border-[#eee];
+  }
+  .tbl_price_menu tr:last-child td:last-child {
+    text-align: left;
+  }
 }
