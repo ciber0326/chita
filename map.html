@@ -138,6 +138,7 @@
             <span></span>
             <span></span>
         </div>
+
         <div class="modal-container">
             <div class="p-0 w-full modal-wrapper">
                 <div
@@ -148,12 +149,13 @@
                     <div
                         class="gap-x-[20px] gap-y-[20px] grid grid-cols-1 lg:grid-cols-2">
                         <a class="window"
-                            href="https://chita-coating.com/map_yutai.html#map1">
+                            href="./map.html#restaurant">
                             <p class="title">長浦インター店</p>
                             <p class="content">
-                                ・長浦駅から車で4分<br>
-                                ・阿久比ICから車で10分<br>
-                                <br><br>
+                                ・長浦駅から車で4分<br class="hidden md:block">
+                                ・阿久比ICから車で10分<br class="hidden md:block">
+                                <br class="hidden md:block"><br
+                                    class="hidden md:block">
                                 ★「中日ガス」さんの横、向かいには「ファミリーマート知多岡田店」がございます。
                             </p>
                         </a>
@@ -165,16 +167,15 @@
                                     class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
                                     <img src="./assets/img/phone.png"
                                         alt="phone-icon"
-                                        class="rounded-[50%] w-[40px] lg:w-[80px] h-auto lg:h-[80px]"
-                                        width="80"
-                                        height="80">
+                                        class="rounded-[50%] w-[40px] lg:w-[80px] h-auto"
+                                        width="80" height="80">
                                     0800-812-7809
-                                </a><br>
+                                </a><br class="hidden md:block">
                                 営業時間: 8:00～19:00 (定休日：なし)
                             </p>
                         </div>
                         <a class="window"
-                            href="https://chita-coating.com/map_yutai.html#map2">
+                            href="./map.html#restaurant">
                             <p class="title">新舞子店
                             </p>
                             <p class="text-center content">
@@ -183,7 +184,8 @@
                         </a>
 
                         <div class="window">
-                            <p class="title">2025年4月リニューアルオープン予定<br>
+                            <p class="title">2025年4月リニューアルオープン予定<br
+                                    class="hidden md:block">
                                 -新舞子店で施工完了後のお問合せ-
                             </p>
                             <p class="text-center content">
@@ -191,11 +193,10 @@
                                     class="flex justify-center items-center gap-x-4 font-bold text-[18px] text-center md:text-[32px] lg:text-[44px]">
                                     <img src="./assets/img/phone.png"
                                         alt="phone-icon"
-                                        class="rounded-[50%] w-[40px] lg:w-[80px] h-[40px] h-auto lg:h-[80px]"
-                                        width="80"
-                                        height="80">
+                                        class="rounded-[50%] w-[40px] lg:w-[80px] h-auto"
+                                        width="80" height="80">
                                     0120-996-777
-                                </a><br>
+                                </a><br class="hidden md:block">
                                 営業時間: 9:00～19:00 (定休日：月曜 ※月曜祝日の場合は翌火曜)
                             </p>
                         </div>
@@ -203,7 +204,7 @@
                     <img src="./assets/img/modal-img-01.png"
                         class="block mx-auto my-4 max-w-full"
                         alt="modal-ctn-img">
-                    <a href="https://chita-coating.com/choice/" class="w-full">
+                    <a href="./reservation.html" class="w-full">
                         <img src="./assets/img/modal-img-02.png"
                             class="block mx-auto my-4 max-w-full"
                             alt="modal-ctn-img">
@@ -230,7 +231,7 @@
                 <div class="o-container">
                     <nav
                         class="flex flex-wrap justify-center gap-x-4 gap-y-4 py-8">
-                        <a href="javascript:;" class="relative w-[200px] group"
+                        <a href="#restaurant" class="relative w-[200px] group"
                             style="
                             
                             background-image: linear-gradient(to bottom, #2a8141b0, #2a8141b0) ,url(./assets/img/home/hero-slider-img-01.png);
@@ -246,7 +247,7 @@
 
                         </a>
 
-                        <a href="javascript:;" class="relative w-[300px] group"
+                        <a href="#company" class="relative w-[300px] group" 
                             style="
                             
                             background-image: linear-gradient(to bottom, #AB050594, #AB050594) ,url(./assets/img/home/hero-slider-img-01.png);
@@ -262,7 +263,7 @@
 
                         </a>
 
-                        <a href="javascript:;" class="relative w-[300px] group"
+                        <a href="#stuff" class="relative w-[300px] group"
                             style="
                             
                             background-image: linear-gradient(to bottom, #029FB094, #029FB094) ,url(./assets/img/home/hero-slider-img-01.png);
@@ -398,7 +399,7 @@
             </section>
             <section id="map-map-sec" class="my-8">
                 <div class="s-container">
-                    <ul class="map-list">
+                    <ul class="map-list" id="restaurant">
                         <li class="map-item">
                             <!-- <h3>新潟県の店舗情報</h3> -->
                             <img src="./assets/img/map/new_res.png"
@@ -1509,7 +1510,7 @@
                                 </tr>
                             </table>
                         </li>
-                        <li>
+                        <li id="company">
                             <h4 class="intro-title">店舗紹介</h4>
                             <br>
                             <div
@@ -1538,7 +1539,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li id="stuff">
                             <h4 class="intro-title">スタッフ紹介</h4>
                             <br>
                             <ul class="accordion-list">

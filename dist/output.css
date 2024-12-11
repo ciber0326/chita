@@ -556,6 +556,10 @@ video {
 
 /* --------------------------------common */
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --clr-blue: #00349a;
   --clr-green: #00c61d;
@@ -1405,12 +1409,18 @@ footer nav a {
 .card-item {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center;
   border-radius: 30px;
   padding-left: 15px;
   padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+@media (min-width: 640px) {
+  .card-item {
+    justify-content: space-between;
+  }
 }
 
 @media (min-width: 426px) {
@@ -2750,6 +2760,10 @@ table.map-table tr th:first-child,
   margin-bottom: 2rem;
 }
 
+.mb-0 {
+  margin-bottom: 0px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -3298,6 +3312,10 @@ table.map-table tr th:first-child,
   padding-top: 0.875rem;
 }
 
+.text-left {
+  text-align: left;
+}
+
 .text-center {
   text-align: center;
 }
@@ -3356,6 +3374,10 @@ table.map-table tr th:first-child,
 
 .font-bold {
   font-weight: 700;
+}
+
+.leading-\[1\.6\] {
+  line-height: 1.6;
 }
 
 .leading-loose {
@@ -3465,6 +3487,10 @@ table.map-table tr th:first-child,
 }
 
 @media (min-width: 640px) {
+  .sm\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
   .sm\:mb-5 {
     margin-bottom: 1.25rem;
   }
@@ -3475,6 +3501,10 @@ table.map-table tr th:first-child,
 
   .sm\:inline-block {
     display: inline-block;
+  }
+
+  .sm\:flex {
+    display: flex;
   }
 
   .sm\:aspect-auto {
@@ -3526,6 +3556,10 @@ table.map-table tr th:first-child,
 
   .sm\:ps-\[calc\(40\%\+32px\)\] {
     padding-inline-start: calc(40% + 32px);
+  }
+
+  .sm\:text-center {
+    text-align: center;
   }
 
   .sm\:text-\[16px\] {

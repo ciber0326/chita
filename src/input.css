@@ -327,7 +327,7 @@
   /* -- top-sec-02 */
   /* -- -- card */
   .card-item {
-    @apply flex justify-between px-[15px] py-[15px] rounded-[30px] w-full;
+    @apply flex justify-center sm:justify-between px-[15px] py-[15px] rounded-[30px] w-full;
     @apply xm:w-[420px] xm:px-[30px] xm:py-[20px];
   }
 
